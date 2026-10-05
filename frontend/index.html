@@ -41,24 +41,24 @@ main{max-width:1280px;margin:0 auto;padding:24px}.steps{display:flex;gap:8px;mar
 @media(max-width:900px){.grid{grid-template-columns:1fr}.viewer{height:720px}.compare-view{grid-template-columns:1fr;grid-template-rows:1fr 1fr}.preview-pane{min-height:0}header{padding:14px 14px 16px;gap:11px}.brand-title{font-size:clamp(27px,8vw,39px)}.brand small{font-size:12px}.support-box{width:100%;padding:10px 12px}.support-top{grid-template-columns:1fr;gap:10px}.support-copy{font-size:10.5px;text-align:center}.support-side{align-items:center}.support-actions{justify-content:center}.donate-btn{font-size:13px!important;padding:10px 16px!important}main{padding:14px}.steps{font-size:12px}.footerbar .btn,#download{min-height:48px}}
 @media(max-width:620px){header{text-align:center}.brand{align-items:center}.support-box{align-items:stretch}.support-copy{text-align:center}.support-side{align-items:center}.support-actions{justify-content:center}.creator-instagram{font-size:10px}.creator-instagram svg{width:14px;height:14px;flex-basis:14px}.brand-title{font-size:31px}.brand small{font-size:11px}.support-copy{font-size:10px}.monthly-goal{width:100%}.monthly-goal-label{font-size:8.6px}}
 
-/* Donation selector */
-.donation-modal{position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;padding:20px;background:rgba(0,0,0,.82);backdrop-filter:blur(6px)}
+/* Selector de donaciones */
+.donation-modal{position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;padding:20px;background:rgba(0,0,0,.84);backdrop-filter:blur(7px)}
 .donation-modal.hidden{display:none!important}
-.donation-dialog{position:relative;width:min(92vw,560px);max-height:90vh;overflow:auto;border:1px solid rgba(142,246,255,.7);border-radius:18px;background:radial-gradient(circle at 50% 0%,rgba(72,228,255,.08),transparent 35%),#05070a;padding:22px;box-shadow:0 0 22px rgba(72,228,255,.2),0 0 42px rgba(255,88,184,.1)}
-.donation-close{position:absolute;top:10px;right:10px;width:36px;height:36px;border:1px solid rgba(255,255,255,.25);border-radius:50%;background:#090909;color:#fff;font-size:20px;cursor:pointer}
+.donation-dialog{position:relative;width:min(92vw,600px);max-height:90vh;overflow:auto;border:1px solid rgba(142,246,255,.72);border-radius:18px;background:radial-gradient(circle at 50% 0%,rgba(72,228,255,.09),transparent 36%),radial-gradient(circle at 100% 100%,rgba(255,88,184,.06),transparent 34%),#05070a;padding:22px;box-shadow:0 0 22px rgba(72,228,255,.20),0 0 42px rgba(255,88,184,.10)}
+.donation-close{position:absolute;top:10px;right:10px;width:36px;height:36px;border:1px solid rgba(255,255,255,.28);border-radius:50%;background:#090909;color:#fff;font-size:22px;line-height:1;cursor:pointer}
 .donation-dialog h3{margin:0 44px 6px 0;font-size:22px;color:#fff;text-shadow:0 0 12px rgba(72,228,255,.28)}
 .donation-dialog>p{margin:0 0 16px;color:#cfd8dc;font-size:13px;line-height:1.5}
 .donation-options{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
-.donation-option{min-height:68px;border:1.5px solid #00a8ff;border-radius:12px;background:#050505;color:#fff;font-weight:850;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:12px;text-align:center;transition:.18s ease;box-shadow:0 0 10px rgba(0,168,255,.09)}
-.donation-option:hover{background:#07111a;border-color:#62d2ff;box-shadow:0 0 18px rgba(0,168,255,.2);transform:translateY(-1px)}
-.binance-panel{display:none;margin-top:16px;padding:16px;border:1px solid rgba(255,255,255,.2);border-radius:14px;background:#0a0a0a;text-align:center}
+.donation-option{min-height:72px;border:1.5px solid #00a8ff;border-radius:12px;background:#050505;color:#fff;font-weight:850;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;padding:12px;text-align:center;transition:.18s ease;box-shadow:0 0 10px rgba(0,168,255,.09)}
+.donation-option:hover{background:#07111a;border-color:#62d2ff;box-shadow:0 0 18px rgba(0,168,255,.20);transform:translateY(-1px)}
+.donation-option small{color:#aebbc2;font-size:10px;font-weight:650}
+.binance-panel{display:none;margin-top:16px;padding:16px;border:1px solid rgba(255,255,255,.20);border-radius:14px;background:#0a0a0a;text-align:center}
 .binance-panel.active{display:block}
-.binance-panel img{display:block;width:min(260px,80vw);height:auto;margin:0 auto 12px;border-radius:10px;background:#fff;padding:8px;image-rendering:auto}
-.binance-panel strong{display:block;margin-bottom:5px;color:#fff}
+.binance-panel img{display:block;width:min(280px,78vw);height:auto;margin:0 auto 12px;border-radius:10px;background:#fff;padding:8px;image-rendering:auto}
+.binance-panel strong{display:block;margin-bottom:5px;color:#fff;font-size:15px}
 .binance-panel p{margin:0;color:#cfd8dc;font-size:12px;line-height:1.45}
 .donation-thanks{margin-top:14px!important;text-align:center;color:#aeeeff!important;font-size:11px!important}
 @media(max-width:620px){.donation-options{grid-template-columns:1fr}.donation-dialog{padding:18px}.donation-dialog h3{font-size:19px}}
-
 </style>
 </head>
 <body>
@@ -167,6 +167,25 @@ main{max-width:1280px;margin:0 auto;padding:24px}.steps{display:flex;gap:8px;mar
 </aside>
 </div>
 </main>
+
+<div class="donation-modal hidden" id="donationModal" role="dialog" aria-modal="true" aria-labelledby="donationTitle">
+  <div class="donation-dialog">
+    <button class="donation-close" id="donationClose" type="button" aria-label="Cerrar">×</button>
+    <h3 id="donationTitle">Elige cómo quieres apoyar</h3>
+    <p>Tu aporte ayuda a cubrir inteligencia artificial, hosting y mantenimiento para que TATTOO STENCIL FREE siga disponible gratis.</p>
+    <div class="donation-options">
+      <button class="donation-option" id="donatePaypal" type="button"><span>PayPal</span><small>Aporte con PayPal</small></button>
+      <button class="donation-option" id="donateMercadoPago" type="button"><span>Mercado Pago</span><small>Link de pago</small></button>
+      <button class="donation-option" id="donateBinance" type="button"><span>Binance Pay</span><small>Mostrar QR</small></button>
+    </div>
+    <div class="binance-panel" id="binancePanel">
+      <img src="/assets/binance-pay-qr.png" alt="QR de Binance Pay para apoyar TATTOO STENCIL FREE">
+      <strong>Binance Pay</strong>
+      <p>Escanea este código con Binance Pay. Tú eliges el importe de tu aporte.</p>
+    </div>
+    <p class="donation-thanks">Gracias por ayudar a mantener TATTOO STENCIL FREE funcionando.</p>
+  </div>
+</div>
 <script>
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 const file=$('#file'), photoCanvas=$('#photoCanvas'), ctx=photoCanvas.getContext('2d');
@@ -348,26 +367,7 @@ function zoomPreviewHTML(src,message,title='Vista previa'){
  #zoomImage{display:block;background:#fff;box-shadow:0 12px 45px rgba(0,0,0,.45);max-width:none;max-height:none;cursor:zoom-in;image-rendering:auto}
  #viewport.zoomed #zoomImage{cursor:zoom-out}
  @media(max-width:650px){.top{padding:8px}.notice{font-size:11px}#viewport{inset:43px 0 0 0;padding:14px}}
- 
-/* Donation selector */
-.donation-modal{position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;padding:20px;background:rgba(0,0,0,.82);backdrop-filter:blur(6px)}
-.donation-modal.hidden{display:none!important}
-.donation-dialog{position:relative;width:min(92vw,560px);max-height:90vh;overflow:auto;border:1px solid rgba(142,246,255,.7);border-radius:18px;background:radial-gradient(circle at 50% 0%,rgba(72,228,255,.08),transparent 35%),#05070a;padding:22px;box-shadow:0 0 22px rgba(72,228,255,.2),0 0 42px rgba(255,88,184,.1)}
-.donation-close{position:absolute;top:10px;right:10px;width:36px;height:36px;border:1px solid rgba(255,255,255,.25);border-radius:50%;background:#090909;color:#fff;font-size:20px;cursor:pointer}
-.donation-dialog h3{margin:0 44px 6px 0;font-size:22px;color:#fff;text-shadow:0 0 12px rgba(72,228,255,.28)}
-.donation-dialog>p{margin:0 0 16px;color:#cfd8dc;font-size:13px;line-height:1.5}
-.donation-options{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
-.donation-option{min-height:68px;border:1.5px solid #00a8ff;border-radius:12px;background:#050505;color:#fff;font-weight:850;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:12px;text-align:center;transition:.18s ease;box-shadow:0 0 10px rgba(0,168,255,.09)}
-.donation-option:hover{background:#07111a;border-color:#62d2ff;box-shadow:0 0 18px rgba(0,168,255,.2);transform:translateY(-1px)}
-.binance-panel{display:none;margin-top:16px;padding:16px;border:1px solid rgba(255,255,255,.2);border-radius:14px;background:#0a0a0a;text-align:center}
-.binance-panel.active{display:block}
-.binance-panel img{display:block;width:min(260px,80vw);height:auto;margin:0 auto 12px;border-radius:10px;background:#fff;padding:8px;image-rendering:auto}
-.binance-panel strong{display:block;margin-bottom:5px;color:#fff}
-.binance-panel p{margin:0;color:#cfd8dc;font-size:12px;line-height:1.45}
-.donation-thanks{margin-top:14px!important;text-align:center;color:#aeeeff!important;font-size:11px!important}
-@media(max-width:620px){.donation-options{grid-template-columns:1fr}.donation-dialog{padding:18px}.donation-dialog h3{font-size:19px}}
-
-</style></head><body><div class="top"><div class="notice">${safeMessage}</div></div><div id="viewport"><div id="stage"><img id="zoomImage" src="${src}" alt="${safeTitle}" title=""></div></div><script>
+ </style></head><body><div class="top"><div class="notice">${safeMessage}</div></div><div id="viewport"><div id="stage"><img id="zoomImage" src="${src}" alt="${safeTitle}" title=""></div></div><script>
  const img=document.getElementById('zoomImage'),vp=document.getElementById('viewport');
  let scale=1,fitScale=1,maxScale=8,zoomed=false,drag=false,moved=false,sx=0,sy=0,sl=0,st=0;
  function clamp(v,a,b){return Math.max(a,Math.min(b,v))}
@@ -405,27 +405,7 @@ function zoomPreviewHTML(src,message,title='Vista previa'){
  vp.addEventListener('pointerup',stop);
  vp.addEventListener('pointercancel',e=>{if(!drag)return;drag=false;moved=false;vp.classList.remove('dragging');try{vp.releasePointerCapture(e.pointerId)}catch(_){}});
  window.addEventListener('resize',()=>{if(!zoomed)fit()});
- <\/script>
-<div class="donation-modal hidden" id="donationModal" role="dialog" aria-modal="true" aria-labelledby="donationTitle">
-  <div class="donation-dialog">
-    <button class="donation-close" id="donationClose" aria-label="Cerrar">×</button>
-    <h3 id="donationTitle">Elige cómo quieres apoyar</h3>
-    <p>Tu aporte ayuda a cubrir inteligencia artificial, hosting y mantenimiento para que TATTOO STENCIL FREE siga disponible gratis.</p>
-    <div class="donation-options">
-      <button class="donation-option" id="donatePaypal">PayPal</button>
-      <button class="donation-option" id="donateMercadoPago">Mercado Pago</button>
-      <button class="donation-option" id="donateBinance">Binance Pay</button>
-    </div>
-    <div class="binance-panel" id="binancePanel">
-      <img src="/assets/binance-pay-qr.png" alt="QR de Binance Pay para apoyar TATTOO STENCIL FREE">
-      <strong>Binance Pay</strong>
-      <p>Escanea este código con Binance Pay. Tú eliges el importe de tu aporte.</p>
-    </div>
-    <p class="donation-thanks">Gracias por ayudar a mantener TATTOO STENCIL FREE funcionando.</p>
-  </div>
-</div>
-
-</body></html>`;
+ <\/script></body></html>`;
 }
 
 function openImageWindow(src,message,title='Vista previa'){
@@ -460,46 +440,7 @@ async function openStencilPreview(){
  if(!w){alert('El navegador bloqueó la nueva ventana. Permite ventanas emergentes para este sitio e inténtalo otra vez.');return;}
  w.opener=null;
  w.document.open();
- w.document.write('<!doctype html><html lang="es"><head><meta charset="utf-8"><title>Stencil</title><style>body{font-family:system-ui,sans-serif;display:grid;place-items:center;min-height:100vh;margin:0;background:#000;color:#eee}
-/* Donation selector */
-.donation-modal{position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;padding:20px;background:rgba(0,0,0,.82);backdrop-filter:blur(6px)}
-.donation-modal.hidden{display:none!important}
-.donation-dialog{position:relative;width:min(92vw,560px);max-height:90vh;overflow:auto;border:1px solid rgba(142,246,255,.7);border-radius:18px;background:radial-gradient(circle at 50% 0%,rgba(72,228,255,.08),transparent 35%),#05070a;padding:22px;box-shadow:0 0 22px rgba(72,228,255,.2),0 0 42px rgba(255,88,184,.1)}
-.donation-close{position:absolute;top:10px;right:10px;width:36px;height:36px;border:1px solid rgba(255,255,255,.25);border-radius:50%;background:#090909;color:#fff;font-size:20px;cursor:pointer}
-.donation-dialog h3{margin:0 44px 6px 0;font-size:22px;color:#fff;text-shadow:0 0 12px rgba(72,228,255,.28)}
-.donation-dialog>p{margin:0 0 16px;color:#cfd8dc;font-size:13px;line-height:1.5}
-.donation-options{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
-.donation-option{min-height:68px;border:1.5px solid #00a8ff;border-radius:12px;background:#050505;color:#fff;font-weight:850;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:12px;text-align:center;transition:.18s ease;box-shadow:0 0 10px rgba(0,168,255,.09)}
-.donation-option:hover{background:#07111a;border-color:#62d2ff;box-shadow:0 0 18px rgba(0,168,255,.2);transform:translateY(-1px)}
-.binance-panel{display:none;margin-top:16px;padding:16px;border:1px solid rgba(255,255,255,.2);border-radius:14px;background:#0a0a0a;text-align:center}
-.binance-panel.active{display:block}
-.binance-panel img{display:block;width:min(260px,80vw);height:auto;margin:0 auto 12px;border-radius:10px;background:#fff;padding:8px;image-rendering:auto}
-.binance-panel strong{display:block;margin-bottom:5px;color:#fff}
-.binance-panel p{margin:0;color:#cfd8dc;font-size:12px;line-height:1.45}
-.donation-thanks{margin-top:14px!important;text-align:center;color:#aeeeff!important;font-size:11px!important}
-@media(max-width:620px){.donation-options{grid-template-columns:1fr}.donation-dialog{padding:18px}.donation-dialog h3{font-size:19px}}
-
-</style></head><body>Preparando vista del stencil…
-<div class="donation-modal hidden" id="donationModal" role="dialog" aria-modal="true" aria-labelledby="donationTitle">
-  <div class="donation-dialog">
-    <button class="donation-close" id="donationClose" aria-label="Cerrar">×</button>
-    <h3 id="donationTitle">Elige cómo quieres apoyar</h3>
-    <p>Tu aporte ayuda a cubrir inteligencia artificial, hosting y mantenimiento para que TATTOO STENCIL FREE siga disponible gratis.</p>
-    <div class="donation-options">
-      <button class="donation-option" id="donatePaypal">PayPal</button>
-      <button class="donation-option" id="donateMercadoPago">Mercado Pago</button>
-      <button class="donation-option" id="donateBinance">Binance Pay</button>
-    </div>
-    <div class="binance-panel" id="binancePanel">
-      <img src="/assets/binance-pay-qr.png" alt="QR de Binance Pay para apoyar TATTOO STENCIL FREE">
-      <strong>Binance Pay</strong>
-      <p>Escanea este código con Binance Pay. Tú eliges el importe de tu aporte.</p>
-    </div>
-    <p class="donation-thanks">Gracias por ayudar a mantener TATTOO STENCIL FREE funcionando.</p>
-  </div>
-</div>
-
-</body></html>');
+ w.document.write('<!doctype html><html lang="es"><head><meta charset="utf-8"><title>Stencil</title><style>body{font-family:system-ui,sans-serif;display:grid;place-items:center;min-height:100vh;margin:0;background:#000;color:#eee}</style></head><body>Preparando vista del stencil…</body></html>');
  w.document.close();
  try{
    const data=await composeCurrentStencilPreview();
@@ -534,36 +475,26 @@ function renderMonthlyDonationGoal(){
 renderMonthlyDonationGoal();
 const donationModal=$('#donationModal');
 const binancePanel=$('#binancePanel');
-const donationAction=()=>{binancePanel.classList.remove('active');donationModal.classList.remove('hidden');document.body.style.overflow='hidden';};
-const closeDonation=()=>{donationModal.classList.add('hidden');binancePanel.classList.remove('active');document.body.style.overflow='';};
+const donationAction=()=>{
+  if(!donationModal)return;
+  binancePanel?.classList.remove('active');
+  donationModal.classList.remove('hidden');
+  document.body.style.overflow='hidden';
+};
+const closeDonation=()=>{
+  if(!donationModal)return;
+  donationModal.classList.add('hidden');
+  binancePanel?.classList.remove('active');
+  document.body.style.overflow='';
+};
 $('#donate').onclick=donationAction;
 $('#donateFinal').onclick=donationAction;
 $('#donationClose').onclick=closeDonation;
 $('#donatePaypal').onclick=()=>window.open('https://paypal.me/rodrigoloyolatattoo','_blank','noopener,noreferrer');
 $('#donateMercadoPago').onclick=()=>window.open('https://link.mercadopago.cl/tattoostencilfree','_blank','noopener,noreferrer');
-$('#donateBinance').onclick=()=>binancePanel.classList.toggle('active');
+$('#donateBinance').onclick=()=>binancePanel?.classList.toggle('active');
 donationModal.addEventListener('click',(e)=>{if(e.target===donationModal)closeDonation();});
 document.addEventListener('keydown',(e)=>{if(e.key==='Escape'&&!donationModal.classList.contains('hidden'))closeDonation();});
 activateModePreset('detailed');checkEngine();
 </script>
-
-<div class="donation-modal hidden" id="donationModal" role="dialog" aria-modal="true" aria-labelledby="donationTitle">
-  <div class="donation-dialog">
-    <button class="donation-close" id="donationClose" aria-label="Cerrar">×</button>
-    <h3 id="donationTitle">Elige cómo quieres apoyar</h3>
-    <p>Tu aporte ayuda a cubrir inteligencia artificial, hosting y mantenimiento para que TATTOO STENCIL FREE siga disponible gratis.</p>
-    <div class="donation-options">
-      <button class="donation-option" id="donatePaypal">PayPal</button>
-      <button class="donation-option" id="donateMercadoPago">Mercado Pago</button>
-      <button class="donation-option" id="donateBinance">Binance Pay</button>
-    </div>
-    <div class="binance-panel" id="binancePanel">
-      <img src="/assets/binance-pay-qr.png" alt="QR de Binance Pay para apoyar TATTOO STENCIL FREE">
-      <strong>Binance Pay</strong>
-      <p>Escanea este código con Binance Pay. Tú eliges el importe de tu aporte.</p>
-    </div>
-    <p class="donation-thanks">Gracias por ayudar a mantener TATTOO STENCIL FREE funcionando.</p>
-  </div>
-</div>
-
 </body></html>
