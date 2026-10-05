@@ -11,3 +11,9 @@ El repositorio incluye un `Dockerfile` listo para Railway. Railway debe recibir 
 No guardes claves API en el repositorio.
 
 Health check disponible en `/api/health`.
+
+## Donaciones
+El botón APOYAR Y DONAR abre un selector con:
+- PayPal
+- Mercado Pago
+- Binance Pay mediante QR
