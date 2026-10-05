@@ -458,9 +458,59 @@ $('#outWidthCm').oninput=()=>{lastSizeEdit='width';if($('#lockRatio').checked&&e
 $('#outHeightCm').oninput=()=>{lastSizeEdit='height';if($('#lockRatio').checked&&exportRatio){$('#outWidthCm').value=((+$('#outHeightCm').value||20)*exportRatio).toFixed(1)}updateSizePreview()};
 $('#lockRatio').onchange=()=>{if($('#lockRatio').checked){if(lastSizeEdit==='height')$('#outWidthCm').oninput();else $('#outWidthCm').oninput()}else updateSizePreview()};
 $('#dpi').onchange=updateSizePreview;
-$('#download').onclick=async()=>{if(!(demoMode||realGenerated)){alert('Primero genera un stencil.');return;}const dpi=+$('#dpi').value||300;const wcm=Math.max(1,+$('#outWidthCm').value||15),hcm=Math.max(1,+$('#outHeightCm').value||20);const W=Math.max(300,Math.min(12000,Math.round(wcm/2.54*dpi)));const H=Math.max(300,Math.min(12000,Math.round(hcm/2.54*dpi)));const c=document.createElement('canvas');c.width=W;c.height=H;const x=c.getContext('2d');if($('#background').value==='white'){x.fillStyle='#fff';x.fillRect(0,0,W,H)}
- const contrast=0;const extraPasses=0;
- for(const [name,el] of Object.entries(layers)){if(!el.src)continue;const im=await loadImg(el.src);const baseAlpha=parseFloat(el.style.opacity||1);x.globalAlpha=baseAlpha;x.drawImage(im,0,0,W,H);for(let p=0;p<extraPasses;p++){x.globalAlpha=baseAlpha*.45;x.drawImage(im,0,0,W,H)}}x.globalAlpha=1;const a=document.createElement('a');a.download=`tattoo-stencil-${wcm.toFixed(1)}x${hcm.toFixed(1)}cm.png`;a.href=c.toDataURL('image/png');a.click();const fs=$('#finalSupport');if(fs){fs.classList.remove('hidden');setTimeout(()=>fs.scrollIntoView({behavior:'smooth',block:'nearest'}),180)}};
+function canvasToPngBlob(canvas){return new Promise((resolve,reject)=>{canvas.toBlob(blob=>blob?resolve(blob):reject(new Error('No se pudo preparar el PNG.')),'image/png')})}
+function isAppleTouchDevice(){return /iPad|iPhone|iPod/i.test(navigator.userAgent)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1)}
+async function savePngForDevice(canvas,filename){
+  const blob=await canvasToPngBlob(canvas);
+  const fileObj=new File([blob],filename,{type:'image/png'});
+  if(isAppleTouchDevice()&&navigator.share){
+    const shareData={files:[fileObj],title:'TATTOO STENCIL FREE'};
+    const canShareFiles=!navigator.canShare||navigator.canShare(shareData);
+    if(canShareFiles){
+      try{await navigator.share(shareData);return 'shared'}catch(err){if(err&&err.name==='AbortError')return 'cancelled';console.warn('iOS share failed, using download fallback',err)}
+    }
+  }
+  const url=URL.createObjectURL(blob);
+  const a=document.createElement('a');
+  a.href=url;
+  a.download=filename;
+  a.style.display='none';
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  setTimeout(()=>URL.revokeObjectURL(url),60000);
+  return 'downloaded';
+}
+$('#download').onclick=async()=>{
+  if(!(demoMode||realGenerated)){alert('Primero genera un stencil.');return;}
+  const btn=$('#download');
+  const oldText=btn.textContent;
+  btn.disabled=true;btn.textContent='Preparando PNG…';
+  try{
+    const dpi=+$('#dpi').value||300;
+    const wcm=Math.max(1,+$('#outWidthCm').value||15),hcm=Math.max(1,+$('#outHeightCm').value||20);
+    const W=Math.max(300,Math.min(12000,Math.round(wcm/2.54*dpi)));
+    const H=Math.max(300,Math.min(12000,Math.round(hcm/2.54*dpi)));
+    const c=document.createElement('canvas');c.width=W;c.height=H;
+    const x=c.getContext('2d');
+    if($('#background').value==='white'){x.fillStyle='#fff';x.fillRect(0,0,W,H)}
+    const contrast=0;const extraPasses=0;
+    for(const [name,el] of Object.entries(layers)){
+      if(!el.src)continue;
+      const im=await loadImg(el.src);
+      const baseAlpha=parseFloat(el.style.opacity||1);
+      x.globalAlpha=baseAlpha;x.drawImage(im,0,0,W,H);
+      for(let p=0;p<extraPasses;p++){x.globalAlpha=baseAlpha*.45;x.drawImage(im,0,0,W,H)}
+    }
+    x.globalAlpha=1;
+    const filename=`tattoo-stencil-${wcm.toFixed(1)}x${hcm.toFixed(1)}cm.png`;
+    const result=await savePngForDevice(c,filename);
+    if(result==='cancelled')return;
+    const fs=$('#finalSupport');
+    if(fs){fs.classList.remove('hidden');setTimeout(()=>fs.scrollIntoView({behavior:'smooth',block:'nearest'}),180)}
+  }catch(err){console.error(err);alert('No se pudo guardar el PNG. Inténtalo nuevamente.');}
+  finally{btn.disabled=false;btn.textContent=oldText;}
+};
 const DONATION_MONTHLY_GOAL=500;
 const DONATION_MONTHLY_RAISED=75;
 function renderMonthlyDonationGoal(){
