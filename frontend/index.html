@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>TATTOO STENCIL FREE</title>
+<title>TATTOO STENCIL</title>
 <style>
 :root{--bg:#000000;--panel:#050505;--ink:#f5f5f5;--muted:#b7b7b7;--line:rgba(255,255,255,.26);--accent:#9d86ff;--ok:#67d59b;--warn:#ffd982;--neon-cyan:#8ef6ff;--neon-cyan-strong:#48e4ff;--neon-pink:#ff58b8;--neon-pink-strong:#ff2f9a}
 *{box-sizing:border-box} body{margin:0;font:15px/1.4 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink)}
@@ -39,7 +39,7 @@ main{max-width:1280px;margin:0 auto;padding:24px}.steps{display:flex;gap:8px;mar
 .final-support{margin-top:16px;padding:17px;border:1px solid rgba(0,174,255,.68);border-radius:16px;background:linear-gradient(135deg,#02070b,#07131c);box-shadow:0 0 24px rgba(0,174,255,.10);text-align:center}.final-support h4{margin:0 0 7px;font-size:17px;color:#fff}.final-support p{margin:0 auto 14px;max-width:570px;color:#dbeaf2;font-size:12.8px;line-height:1.5}.final-support .donate-btn{width:auto!important;align-self:center}
 @media(max-width:1120px){header{padding:16px 14px 18px;gap:12px}.support-top{grid-template-columns:1fr auto}}
 @media(max-width:900px){.grid{grid-template-columns:1fr}.viewer{height:720px}.compare-view{grid-template-columns:1fr;grid-template-rows:1fr 1fr}.preview-pane{min-height:0}header{padding:14px 14px 16px;gap:11px}.brand-title{font-size:clamp(27px,8vw,39px)}.brand small{font-size:12px}.support-box{width:100%;padding:10px 12px}.support-top{grid-template-columns:1fr;gap:10px}.support-copy{font-size:10.5px;text-align:center}.support-side{align-items:center}.support-actions{justify-content:center}.donate-btn{font-size:13px!important;padding:10px 16px!important}main{padding:14px}.steps{font-size:12px}.footerbar .btn,#download{min-height:48px}}
-@media(max-width:620px){header{text-align:center}.brand{align-items:center}.support-box{align-items:stretch}.support-copy{text-align:center}.support-side{align-items:center}.support-actions{justify-content:center}.creator-instagram{font-size:10px}.creator-instagram svg{width:14px;height:14px;flex-basis:14px}.brand-title{font-size:31px}.brand small{font-size:11px}.support-copy{font-size:10px}.monthly-goal{width:100%}.monthly-goal-label{font-size:8.6px}}
+@media(max-width:620px){.guide-legend{grid-template-columns:1fr}header{text-align:center}.brand{align-items:center}.support-box{align-items:stretch}.support-copy{text-align:center}.support-side{align-items:center}.support-actions{justify-content:center}.creator-instagram{font-size:10px}.creator-instagram svg{width:14px;height:14px;flex-basis:14px}.brand-title{font-size:31px}.brand small{font-size:11px}.support-copy{font-size:10px}.monthly-goal{width:100%}.monthly-goal-label{font-size:8.6px}}
 
 /* Selector de donaciones */
 .donation-modal{position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;padding:20px;background:rgba(0,0,0,.84);backdrop-filter:blur(7px)}
@@ -59,87 +59,69 @@ main{max-width:1280px;margin:0 auto;padding:24px}.steps{display:flex;gap:8px;mar
 .binance-panel p{margin:0;color:#cfd8dc;font-size:12px;line-height:1.45}
 .donation-thanks{margin-top:14px!important;text-align:center;color:#aeeeff!important;font-size:11px!important}
 @media(max-width:620px){.donation-options{grid-template-columns:1fr}.donation-dialog{padding:18px}.donation-dialog h3{font-size:19px}}
+
+.payment-box{border-color:rgba(255,255,255,.42)!important;background:#050505!important;box-shadow:none!important}
+.payment-kicker{display:inline-flex;align-items:center;gap:6px;margin-bottom:5px;padding:4px 8px;border:1px solid rgba(0,168,255,.42);border-radius:999px;color:#bcecff;background:#031018;font-size:9.5px;font-weight:900;letter-spacing:.035em;text-transform:uppercase}.payment-subline{margin-top:5px;color:#9fb0b8;font-size:10px;font-weight:650}.payment-btn{letter-spacing:.01em}.payment-trust{margin:8px 0 0;color:#98a9b1;font-size:10px;line-height:1.4;text-align:center}
+.payment-top{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:18px;position:relative;z-index:1}.payment-copy{text-align:left;color:#d8d8d8;font-size:11px;line-height:1.45}.payment-copy strong{display:block;color:#fff;font-size:14px;margin-bottom:3px}.payment-actions{display:flex;flex-direction:column;align-items:flex-end;gap:7px}.payment-btn{border:1.5px solid #00a8ff!important;background:#03080d!important;color:#fff!important;min-height:46px;padding:10px 16px!important;font-weight:900!important;box-shadow:0 0 12px rgba(0,168,255,.10)!important}.payment-btn:hover:not(:disabled){border-color:#39bdff!important;background:#06131d!important}.access-state{font-size:10.5px;color:#aebbc2;font-weight:700}.access-state.unlocked{color:#67d59b}.pay-lock{margin:12px 0 2px;padding:12px;border:1px solid rgba(0,168,255,.48);border-radius:12px;background:#03080d;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}.pay-lock strong{font-size:12px}.pay-lock span{font-size:11px;color:#b8cbd5}.payment-modal{position:fixed;inset:0;z-index:10000;display:flex;align-items:center;justify-content:center;padding:20px;background:rgba(0,0,0,.88);backdrop-filter:blur(7px)}.payment-modal.hidden{display:none!important}.payment-dialog{position:relative;width:min(92vw,520px);max-height:90vh;overflow:auto;border:1px solid rgba(0,168,255,.75);border-radius:18px;background:#05070a;padding:22px;box-shadow:0 0 28px rgba(0,168,255,.14)}.payment-close{position:absolute;top:10px;right:10px;width:36px;height:36px;border:1px solid rgba(255,255,255,.28);border-radius:50%;background:#090909;color:#fff;font-size:22px;line-height:1;cursor:pointer}.payment-dialog h3{margin:0 44px 6px 0;font-size:22px}.payment-dialog p{color:#cfd8dc;font-size:13px;line-height:1.5}.payment-price{font-size:30px;font-weight:950;color:#fff;margin:8px 0 2px}.payment-free-note{margin:0 0 10px;font-size:12px;font-weight:800;color:#9de6ba}.payment-includes{margin:12px 0;padding:10px 12px;border:1px solid rgba(255,255,255,.16);border-radius:12px;background:#0a0a0a;color:#d8d8d8;font-size:11px;line-height:1.5}.paypal-slot{min-height:48px;margin-top:14px}.payment-status{margin-top:12px;font-size:12px;color:#b7b7b7;min-height:18px;line-height:1.45}.payment-status.ok{color:#67d59b}.payment-status.error{color:#ffd982;background:#171006;border:1px solid rgba(255,217,130,.28);border-radius:10px;padding:10px}.payment-auto{margin:12px 0 4px;padding:11px 12px;border:1px solid rgba(103,213,155,.35);border-radius:12px;background:#07120b;color:#9de6ba;font-size:11px;line-height:1.45;font-weight:700}.paypal-heading{margin-top:14px;font-size:12px;font-weight:900;color:#fff;text-align:center;letter-spacing:.015em}@media(max-width:900px){.payment-top{grid-template-columns:1fr}.payment-copy{text-align:center}.payment-actions{align-items:center}}
+.signed-range{display:grid;grid-template-columns:28px minmax(0,1fr) 28px;align-items:center;gap:10px;margin-top:8px}.signed-range .range-sign{display:grid;place-items:center;width:28px;height:28px;border:1px solid rgba(255,255,255,.28);border-radius:50%;font-size:22px;font-weight:800;line-height:1;color:#fff}.signed-range input[type=range]{width:100%;margin:0}.effect-label{font-size:12px;color:#d8d8d8;font-weight:800;margin-bottom:2px}
+
+.posterize-scale{display:flex;justify-content:space-between;gap:12px;margin-top:6px;color:#8f8f8f;font-size:10px;font-weight:700}.guide-legend{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px;padding:10px 11px;border:1px solid rgba(255,255,255,.16);border-radius:10px;background:#050505;color:#c9c9c9;font-size:10.5px;line-height:1.35}.guide-item{display:flex;align-items:center;gap:8px;min-width:0}.guide-sample{width:34px;flex:0 0 34px;border-top:2px solid #f3f3f3}.guide-sample.dashed{border-top-style:dashed;border-top-color:#b9b9b9}.preview-mode-badge{display:inline-flex;align-items:center;gap:6px;padding:5px 9px;border:1px solid rgba(103,213,155,.45);border-radius:999px;background:#07120b;color:#9de6ba;font-size:10px;font-weight:850;margin-bottom:10px}.poster-preview-note{margin-top:9px;color:#9fb0b8;font-size:11px;line-height:1.45}
 </style>
 </head>
 <body>
 <header>
   <div class="brand-wrap">
     <div class="brand">
-      <div class="brand-title">TATTOO STENCIL FREE</div>
-      <small>Sube tu foto → Mejórala → Crea tu Stencil → Descárgala al tamaño que necesites.</small>
+      <div class="brand-title">TATTOO STENCIL</div>
+      <small>Sube tu foto → Mejórala → Posterízala → Crea tu Stencil → Descárgala al tamaño que necesites.</small>
     </div>
   </div>
-  <div class="header-actions">
-    <div class="support-box">
-      <div class="support-top">
-        <div class="support-copy"><strong>TATTOO STENCIL FREE es gratis para todos.</strong> Cada mejora de imagen y cada stencil usa inteligencia artificial que tiene un costo real, además del hosting, almacenamiento y mantenimiento de la web. Si esta herramienta te ahorra tiempo o te ayuda en tu trabajo, una donación —aunque sea pequeña— ayuda a pagar esos gastos y a mantener el servicio gratis, sin suscripciones ni marcas de agua.</div>
-        <div class="support-side">
-          <div class="support-actions">
-            <button class="btn donate-btn" id="donate"><span class="ambulance-siren" aria-hidden="true"></span><span>APOYAR Y DONAR</span></button>
-          </div>
-          <div class="creator-instagram" aria-label="Instagram @Rodrigo_Loyola">
-            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none"/></svg>
-            <span>@Rodrigo_Loyola</span>
-          </div>
-        </div>
-      </div>
-      <div class="monthly-goal" aria-label="Meta de donaciones mensual">
-        <div class="monthly-goal-bar">
-          <div class="monthly-goal-fill" id="monthlyGoalFill"></div>
-          <div class="monthly-goal-content">
-            <span class="monthly-goal-icon" aria-hidden="true">◎</span>
-            <span class="monthly-goal-label">META DE DONACIONES PARA QUE SIGA FUNCIONANDO EL MES QUE VIENE</span>
-            <span class="monthly-goal-percent" id="monthlyGoalPercent">15%</span>
-          </div>
-        </div>
-      </div>
-    </div>
+  <div class="header-actions" style="display:flex;justify-content:center;align-items:center;gap:12px;flex-wrap:wrap">
+    <button class="btn payment-btn" id="unlockAccess" type="button">PAGAR US$1.79</button>
+    <div class="access-state" id="accessState">Acceso bloqueado</div>
   </div>
 </header>
 <main>
-<div class="steps"><div class="step active" id="s1">1 · Imagen</div><div class="step" id="s2">2 · Stencil</div><div class="step" id="s3">3 · Descargar</div></div>
+<div class="steps"><div class="step active" id="s1">1 · Imagen</div><div class="step" id="s2">2 · Posterizar</div><div class="step" id="s3">3 · Stencil</div><div class="step" id="s4">4 · Descargar</div></div>
 <div class="grid">
 <section class="card">
   <div class="viewer" id="viewer">
     <div class="drop" id="drop"><div><h2>Sube una imagen</h2><p>JPG, PNG o WEBP. La foto se transforma usando el estilo de stencil artístico aprobado, no detección de bordes.</p><input type="file" id="file" accept="image/png,image/jpeg,image/webp" hidden><button class="btn primary" id="pick">Elegir imagen</button></div></div>
-    <canvas id="photoCanvas" class="offscreen"></canvas>
+    <canvas id="photoCanvas" class="offscreen"></canvas><canvas id="posterCanvas" class="offscreen"></canvas>
     <div class="compare-view hidden" id="compareView">
       <div class="preview-pane"><div class="preview-title" id="leftTitle">Original <span>Antes</span></div><div class="preview-media"><img id="leftPreview" alt="Vista anterior"></div></div>
       <div class="preview-pane"><div class="preview-title" id="rightTitle">Preparada <span>Después</span></div><div class="preview-media" id="rightPreviewMedia"><img id="rightPreview" alt="Vista actual"><div class="layer-stack hidden" id="stencilStack"><span class="sampletag hidden" id="sampleTag">Demo · stencil aprobado</span><img id="silhouette"><img id="essential"><img id="structure"><img id="segmentation"><img id="detail"><img id="shade"><img id="texture"></div></div></div>
     </div>
     <div class="single-view hidden" id="singlePhotoView"><img id="singlePhoto" alt="Foto completa"></div>
     <div class="single-view hidden" id="singleStencilView"><div class="layer-stack" id="singleStencilStack"><img id="singleSilhouette"><img id="singleEssential"><img id="singleStructure"><img id="singleSegmentation"><img id="singleDetail"><img id="singleShade"><img id="singleTexture"></div></div>
-    <div class="loader hidden" id="loader"><div><div class="spinner"></div><strong id="loaderTitle">Generando stencil artístico…</strong><div class="muted" style="margin-top:6px">Esto puede tardar un poco según el modelo y la calidad elegida.</div></div></div>
+    <div class="loader hidden" id="loader"><div><div class="spinner"></div><strong id="loaderTitle">Generando stencil artístico…</strong><div class="muted" style="margin-top:6px">La carga debe verse mientras se posteriza o genera el stencil. Espera a que finalice el proceso.</div></div></div>
   </div>
   <div class="toolbar"><button class="btn" id="changeImage" disabled>↥ Cambiar imagen</button><button class="btn" id="showCompare" disabled>Comparar</button><button class="btn" id="showPhoto" disabled>Solo imagen</button><button class="btn" id="showStencil" disabled>Solo stencil</button><button class="btn" id="reset" disabled>Restablecer</button></div>
 </section>
 <aside class="card">
   <div id="panelEnhance">
     <h3>Mejorar imagen</h3><p class="muted">Restaura y aumenta la calidad real de la foto antes de crear el stencil: más resolución, nitidez natural y detalle útil, manteniendo el mismo sujeto y composición.</p>
-    <div class="control"><label>Preparación <span id="prepName">Equilibrada</span></label><div class="seg"><button data-preset="soft">Suave</button><button class="active" data-preset="balanced">Equilibrada</button><button data-preset="strong">Fuerte</button></div></div>
-    <div class="control"><label>Recuperar detalle <span id="enhanceValue">50</span></label><input id="enhance" type="range" min="0" max="100" value="50"></div>
-    <div class="footerbar"><span class="muted">Tu original no se modifica.</span><div class="smallrow"><button class="btn primary" id="enhanceReal" disabled>Mejorar imagen</button><button class="btn" id="create" disabled>Crear stencil</button></div></div>
+    <div class="pay-lock" id="payLock"><div><strong>🔒 Herramientas bloqueadas</strong><br><span>Para mejorarla y crear el stencil, realiza el pago único de US$1.79.</span></div><button class="btn payment-btn" id="unlockInline" type="button">PAGAR US$1.79</button></div>
+    <div class="control"><div class="effect-label">Fuerza de mejora</div><div class="signed-range"><span class="range-sign">−</span><input id="enhance" type="range" min="0" max="100" value="50" aria-label="Fuerza de mejora"><span class="range-sign">+</span></div></div>
+    <div class="footerbar"><span class="muted">Tu original no se modifica.</span><div class="smallrow"><button class="btn primary" id="enhanceReal" disabled>Mejorar imagen</button><button class="btn" id="toPosterize" disabled>Continuar a posterizar</button></div></div>
     <div class="notice hidden" id="engineNotice"></div>
   </div>
 
+  <div id="panelPosterize" class="hidden">
+    <h3>Posterizar imagen</h3>
+    <div class="control"><div class="effect-label">Menos posterización menos detalles, más posterización más detalles.</div><div class="signed-range"><span class="range-sign">−</span><input id="posterize" type="range" min="0" max="100" value="70" aria-label="Cantidad de detalles de posterización"><span class="range-sign">+</span></div></div>
+    <div class="footerbar"><button class="btn" id="backPosterizeEnhance">← Mejorar imagen</button><button class="btn primary" id="toStencil" disabled>Continuar a stencil</button></div>
+  </div>
+
   <div id="panelStencil" class="hidden">
-    <h3>Crear stencil</h3><p class="muted">Toca directamente el modo que quieras. Detallado conserva riqueza; Simplificado reduce información con limpieza; Muy limpio deja solo la estructura esencial.</p>
+    <h3>Crear stencil</h3>
     <div class="control"><label>Silueta <span id="vSil">70</span></label><input id="cSil" type="range" min="20" max="100" value="70"></div>
     <div class="control"><label>Detalle <span id="vDet">75</span></label><input id="cDet" type="range" min="0" max="100" value="75"></div>
     <div class="control"><label>Sombras <span id="vSha">72</span></label><input id="cSha" type="range" min="0" max="100" value="72"></div>
     <div class="control"><label>Textura <span id="vTex">68</span></label><input id="cTex" type="range" min="0" max="100" value="68"></div>
-    <div class="control"><label>Modo de stencil <span id="modeName">Detallado</span></label>
-      <div class="seg" style="margin-bottom:10px">
-        <button data-mode="detailed" class="active">Detallado</button>
-        <button data-mode="simplified">Simplificado</button>
-        <button data-mode="clean">Muy limpio</button>
-      </div>
-      <div class="notice ok" id="modeHelp" style="margin-top:0">Mucho detalle: conserva la mayor cantidad posible de líneas, sombras, semitonos y textura, pero manteniendo el stencil limpio.</div>
-    </div>
-    <div class="notice ok" style="margin-top:14px"><strong>Segmentación tonal siempre activa.</strong> Cada modo incluye líneas guía segmentadas que marcan los cambios importantes entre luces, semitonos y sombras de la imagen subida.</div>
-    <div class="notice" style="margin-top:14px">Un solo clic: Detallado, Simplificado y Muy limpio generan directamente su versión. El contraste adicional y la simplificación manual permanecen fijados en 0 para no alterar el resultado del modo elegido.</div>
+    <div class="hidden" aria-hidden="true"><span id="modeName">Detallado</span></div>
     <div class="statusline" id="generationStatus"></div>
-    <div class="footerbar"><button class="btn" id="backEnhance">← Imagen</button><button class="btn primary" id="toExport">Próximo paso: descárgalo a tu tamaño</button></div>
+    <div class="footerbar"><button class="btn" id="backPosterize">← Posterizar</button><button class="btn primary" id="toExport">Próximo paso: descárgalo a tu tamaño</button></div>
   </div>
 
   <div id="panelExport" class="hidden">
@@ -156,130 +138,270 @@ main{max-width:1280px;margin:0 auto;padding:24px}.steps{display:flex;gap:8px;mar
     <div class="field" style="margin-top:12px"><label>Fondo</label><select id="background"><option value="white">Blanco</option><option value="transparent">Transparente</option></select></div>
     <div class="control"><label>Formato <span>PNG</span></label><p class="muted">El PNG se calcula desde los centímetros y DPI elegidos. Para conservar el tamaño físico, imprime al 100%.</p></div>
     <button class="btn primary" id="download" style="width:100%">Descargar PNG</button>
-    <div class="final-support hidden" id="finalSupport">
-      <h4>¿Te sirvió TATTOO STENCIL FREE?</h4>
-      <p>Tu stencil ya fue preparado para descargar. Si esta herramienta te ahorró tiempo o te ayuda en tu trabajo, una donación ayuda a pagar inteligencia artificial, hosting, almacenamiento y mantenimiento para poder seguir manteniéndola gratis y sin suscripciones.</p>
-      <button class="btn donate-btn" id="donateFinal"><span class="ambulance-siren" aria-hidden="true"></span><span>APOYAR Y DONAR</span></button>
-    </div>
-    <div class="notice" style="margin-top:14px">Tu apoyo mantiene TATTOO STENCIL FREE disponible para todos. Las donaciones ayudan a cubrir inteligencia artificial, hosting y mantenimiento para que podamos seguir ofreciendo mejoras y stencils sin cobrar una suscripción.</div>
+    
     <div class="footerbar"><button class="btn" id="backStencil">← Stencil</button></div>
   </div>
 </aside>
 </div>
 </main>
 
-<div class="donation-modal hidden" id="donationModal" role="dialog" aria-modal="true" aria-labelledby="donationTitle">
-  <div class="donation-dialog">
-    <button class="donation-close" id="donationClose" type="button" aria-label="Cerrar">×</button>
-    <h3 id="donationTitle">Elige cómo quieres apoyar</h3>
-    <p>Tu aporte ayuda a cubrir inteligencia artificial, hosting y mantenimiento para que TATTOO STENCIL FREE siga disponible gratis.</p>
-    <div class="donation-options">
-      <button class="donation-option" id="donatePaypal" type="button"><span>PayPal</span><small>Aporte con PayPal</small></button>
-      <button class="donation-option" id="donateMercadoPago" type="button"><span>Mercado Pago</span><small>Link de pago</small></button>
-      <button class="donation-option" id="donateBinance" type="button"><span>Binance Pay</span><small>Mostrar QR</small></button>
+<div class="payment-modal hidden" id="firstImageNotice" role="dialog" aria-modal="true" aria-labelledby="firstImageNoticeTitle">
+  <div class="payment-dialog">
+    <button class="payment-close" id="firstImageNoticeClose" type="button" aria-label="Cerrar">×</button>
+    <div class="payment-kicker" style="font-size:12px;font-weight:900;color:#9de6ba;text-transform:uppercase;letter-spacing:.04em">Pago único · sin suscripción</div>
+    <h3 id="firstImageNoticeTitle">CREA TU STENCIL POR SOLO US$1.79</h3>
+    <p>PayPal confirma el pago y la web desbloquea las herramientas automáticamente.</p>
+    <div class="payment-free-note">Por ahora está libre.</div>
+    <div class="payment-auto">No se cobra nada por subir o revisar tu fotografía.</div>
+    <div class="smallrow" style="margin-top:16px;justify-content:flex-end">
+      <button class="btn" id="firstImageContinue" type="button">Continuar revisando</button>
+      <button class="btn payment-btn" id="firstImagePay" type="button">PAGAR US$1.79</button>
     </div>
-    <div class="binance-panel" id="binancePanel">
-      <img src="/assets/binance-pay-qr.png" alt="QR de Binance Pay para apoyar TATTOO STENCIL FREE">
-      <strong>Binance Pay</strong>
-      <p>Escanea este código con Binance Pay. Tú eliges el importe de tu aporte.</p>
-    </div>
-    <p class="donation-thanks">Gracias por ayudar a mantener TATTOO STENCIL FREE funcionando.</p>
+  </div>
+</div>
+
+<div class="payment-modal hidden" id="paymentModal" role="dialog" aria-modal="true" aria-labelledby="paymentTitle">
+  <div class="payment-dialog">
+    <button class="payment-close" id="paymentClose" type="button" aria-label="Cerrar">×</button>
+    <div class="payment-kicker" style="font-size:12px;font-weight:900;color:#9de6ba;text-transform:uppercase;letter-spacing:.04em">Pago único · sin suscripción</div>
+    <h3 id="paymentTitle">CREA TU STENCIL POR SOLO US$1.79</h3>
+    <div class="payment-price">US$1.79</div>
+    <div class="payment-free-note">Por ahora está libre.</div>
+    <p>PayPal confirma el pago y la web desbloquea las herramientas automáticamente.</p>
+    <div class="payment-auto">No se cobra nada por subir o revisar tu fotografía.</div>
+    <div class="paypal-heading">PAGAR US$1.79 CON PAYPAL</div><div class="paypal-slot" id="paypalButtons"></div><div class="payment-trust">El cobro se procesa de forma segura por PayPal. Al confirmarse, esta ventana se cierra y las herramientas quedan activadas.</div>
+    <div class="payment-status" id="paymentStatus">Preparando pago seguro…</div>
   </div>
 </div>
 <script>
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
-const file=$('#file'), photoCanvas=$('#photoCanvas'), ctx=photoCanvas.getContext('2d');
+const file=$('#file'), photoCanvas=$('#photoCanvas'), ctx=photoCanvas.getContext('2d'), posterCanvas=$('#posterCanvas'), posterCtx=posterCanvas.getContext('2d',{willReadFrequently:true});
 let sourceImg=null, selectedFile=null, generationFile=null, demoMode=false, realGenerated=false, view='compare', prep='balanced', currentPanel=1;
-let originalUrl=null, preparedUrl=null, localPreviewUrl=null, enhancedReady=false, enhancedJobId=null;
-let engineConfigured=false, currentFullUrl=null;
+let originalUrl=null, preparedUrl=null, localPreviewUrl=null, enhancedReady=false, enhancedJobId=null, posterMasterUrl=null, posterMasterJobId=null, posterizedUrl=null, posterizedGuideUrl=null, posterizedJobId=null, posterizedGuidedByMode={}, posterizedGuidesByMode={}, posterizedReady=false, posterizationConfirmed=false, stencilLockedMode=null;
+let engineConfigured=false, currentFullUrl=null, adminPreview=false;
+const params=new URLSearchParams(location.search);
+const localReviewMode=params.get('preview')==='1';
+const isLocalHost=['127.0.0.1','localhost'].includes(location.hostname);
+let accessUnlocked=false, paymentConfigured=false, paymentPrice="1.79", paypalClientId="", paymentRequired=true, busy=false, paypalRendered=false, paymentUses={}, paymentIntroShown=false;
 const layers={silhouette:$('#silhouette'),essential:$('#essential'),structure:$('#structure'),segmentation:$('#segmentation'),detail:$('#detail'),shade:$('#shade'),texture:$('#texture')};
 const singleLayers={silhouette:$('#singleSilhouette'),essential:$('#singleEssential'),structure:$('#singleStructure'),segmentation:$('#singleSegmentation'),detail:$('#singleDetail'),shade:$('#singleShade'),texture:$('#singleTexture')};
 const defaults={con:0,sil:90,det:100,sha:95,tex:95,sim:0};
 const stencilModes={
- detailed:{name:'Detallado',help:'Máximo detalle limpio: muchas líneas finas, textura, semitonos y sombreado organizado. Este modo se mantiene como está.',con:0,sil:90,det:100,sha:95,tex:95,sim:0},
- simplified:{name:'Simplificado',help:'Redibujo intermedio y limpio: menos líneas, mucha menos textura y hatching, pero conserva forma, volumen y rasgos importantes.',con:0,sil:100,det:58,sha:32,tex:18,sim:0},
- clean:{name:'Muy limpio',help:'Redibujo esencial: silueta fuerte y solo las líneas internas indispensables. Casi sin sombreado y sin textura repetitiva.',con:0,sil:100,det:24,sha:4,tex:0,sim:0}
+ detailed:{name:'Detallado',con:0,sil:90,det:100,sha:95,tex:95,sim:0},
+ simplified:{name:'Simplificado',con:0,sil:100,det:58,sha:32,tex:18,sim:0},
+ clean:{name:'Muy limpio',con:0,sil:100,det:24,sha:4,tex:0,sim:0}
 };
-let activeStencilMode='detailed', lastGeneratedMode=null, detailedMasterJobId=null;
+let activeStencilMode='detailed', selectedGuideMode='detailed', lastGeneratedMode=null, detailedMasterJobId=null;
 const modeCache={detailed:null,simplified:null,clean:null};
 const demoLayerUrls={silhouette:'/assets/layer-silhouette.png',essential:'/assets/layer-essential.png',structure:'/assets/layer-structure.png',segmentation:'/assets/layer-segmentation.png',detail:'/assets/layer-detail.png',shade:'/assets/layer-shade.png',texture:'/assets/layer-texture.png'};
 
-function steps(n){['#s1','#s2','#s3'].forEach((id,i)=>$(id).classList.toggle('active',i===n-1));}
-function panels(n){currentPanel=n;$('#panelEnhance').classList.toggle('hidden',n!==1);$('#panelStencil').classList.toggle('hidden',n!==2);$('#panelExport').classList.toggle('hidden',n!==3);steps(n);if(sourceImg)setCompareView();}
+function steps(n){['#s1','#s2','#s3','#s4'].forEach((id,i)=>$(id).classList.toggle('active',i===n-1));}
+function panels(n){currentPanel=n;$('#panelEnhance').classList.toggle('hidden',n!==1);$('#panelPosterize').classList.toggle('hidden',n!==2);$('#panelStencil').classList.toggle('hidden',n!==3);$('#panelExport').classList.toggle('hidden',n!==4);steps(n);if(sourceImg)setCompareView();}
 function photoFilter(){const v=+$('#enhance').value; const contrast=100+(v-50)*0.12; const brightness=100+(v-50)*0.025; const saturate=100+(v-50)*0.05; return `contrast(${contrast}%) brightness(${brightness}%) saturate(${saturate}%)`;}
 function clearStencilOutputs(){realGenerated=false;lastGeneratedMode=null;detailedMasterJobId=null;modeCache.detailed=null;modeCache.simplified=null;modeCache.clean=null;$('#showStencil').disabled=true;$('#generationStatus').textContent='';}
-function markEnhancementDirty(){if(demoMode)return;enhancedReady=false;enhancedJobId=null;generationFile=selectedFile;preparedUrl=localPreviewUrl||originalUrl;$('#create').disabled=true;$('#enhanceReal').disabled=!sourceImg;$('#enhanceReal').textContent='Mejorar imagen';clearStencilOutputs();}
+function markEnhancementDirty(){if(demoMode)return;enhancedReady=false;enhancedJobId=null;posterMasterUrl=null;posterMasterJobId=null;posterizedReady=false;posterizedUrl=null;posterizedGuideUrl=null;posterizedJobId=null;posterizedGuidedByMode={};posterizedGuidesByMode={};posterizationConfirmed=false;stencilLockedMode=null;generationFile=selectedFile;preparedUrl=localPreviewUrl||originalUrl;$('#enhanceReal').textContent='Mejorar imagen';clearStencilOutputs();syncAccessControls();}
 function drawPhoto(invalidate=true){if(!sourceImg)return; const max=1600,r=Math.min(1,max/Math.max(sourceImg.naturalWidth,sourceImg.naturalHeight));photoCanvas.width=Math.max(1,Math.round(sourceImg.naturalWidth*r));photoCanvas.height=Math.max(1,Math.round(sourceImg.naturalHeight*r));ctx.clearRect(0,0,photoCanvas.width,photoCanvas.height);ctx.filter=photoFilter();ctx.drawImage(sourceImg,0,0,photoCanvas.width,photoCanvas.height);ctx.filter='none';localPreviewUrl=photoCanvas.toDataURL('image/png');if(invalidate&&!demoMode)markEnhancementDirty();if(!enhancedReady)preparedUrl=localPreviewUrl;$('#singlePhoto').src=preparedUrl||localPreviewUrl||originalUrl;refreshComparison();}
-function refreshComparison(){if(!sourceImg)return;$('#leftPreview').src=currentPanel===1?originalUrl:(preparedUrl||originalUrl);$('#rightPreview').src=preparedUrl||localPreviewUrl||originalUrl;if(currentPanel===1){$('#leftTitle').innerHTML='Original <span>Antes</span>';$('#rightTitle').innerHTML=enhancedReady?'Imagen mejorada <span>Después · clic para ampliar</span>':'Vista previa <span>Antes de mejorar</span>';$('#rightPreview').classList.remove('hidden');$('#stencilStack').classList.add('hidden');$('#rightPreviewMedia').classList.remove('stencil-white');}else{$('#leftTitle').innerHTML='Imagen mejorada <span>Antes</span>';$('#rightTitle').innerHTML=currentPanel===3?'Stencil <span>Vista para tamaño y descarga</span>':'Stencil <span>Después · clic para ampliar</span>';$('#rightPreview').classList.add('hidden');$('#stencilStack').classList.remove('hidden');$('#rightPreviewMedia').classList.add('stencil-white');}}
+function refreshComparison(){if(!sourceImg)return;
+ const left=$('#leftPreview'),right=$('#rightPreview'),stack=$('#stencilStack'),media=$('#rightPreviewMedia');
+ stack.classList.add('hidden');right.classList.remove('hidden');media.classList.remove('stencil-white');
+ if(currentPanel===1){left.src=originalUrl;right.src=preparedUrl||localPreviewUrl||originalUrl;$('#leftTitle').innerHTML='Original <span>Antes</span>';$('#rightTitle').innerHTML=enhancedReady?'Imagen mejorada <span>Dale click para descargar</span>':'Vista previa <span>Antes de mejorar</span>';}
+ else if(currentPanel===2){left.src=preparedUrl||originalUrl;right.src=posterizedUrl||preparedUrl||originalUrl;$('#leftTitle').innerHTML='Imagen mejorada <span>Antes</span>';$('#rightTitle').innerHTML=posterizedReady?'Imagen posterizada <span>Dale click para descargar</span>':'Posterización <span>Ajusta el control</span>';}
+ else {left.src=posterizedUrl||preparedUrl||originalUrl;$('#leftTitle').innerHTML='Imagen preparada <span>Base del stencil</span>';$('#rightTitle').innerHTML=currentPanel===4?'Stencil <span>Vista para tamaño y descarga</span>':'Stencil <span>Dale click para descargar</span>';if(demoMode||realGenerated){right.classList.add('hidden');stack.classList.remove('hidden');media.classList.add('stencil-white');}else{right.src=posterizedUrl||preparedUrl||originalUrl;$('#rightTitle').innerHTML='Stencil <span>Selecciona un modo para generarlo</span>';}}
+}
 function hideViews(){$('#compareView').classList.add('hidden');$('#singlePhotoView').classList.add('hidden');$('#singleStencilView').classList.add('hidden');}
 function setCompareView(){view='compare';hideViews();$('#compareView').classList.remove('hidden');refreshComparison();}
-function setPhotoView(){view='photo';hideViews();$('#singlePhoto').src=currentPanel===1?(preparedUrl||originalUrl):(preparedUrl||originalUrl);$('#singlePhotoView').classList.remove('hidden');}
+function setPhotoView(){view='photo';hideViews();$('#singlePhoto').src=currentPanel>=2?(posterizedUrl||preparedUrl||originalUrl):(preparedUrl||originalUrl);$('#singlePhotoView').classList.remove('hidden');}
 function setStencilView(){view='stencil';hideViews();$('#singleStencilView').classList.remove('hidden');}
 function setLayerUrls(urls){Object.entries(urls).forEach(([k,u])=>{if(layers[k])layers[k].src=u;if(singleLayers[k])singleLayers[k].src=u;});}
-function setLoading(on,title='Generando stencil artístico…'){$('#loader').classList.toggle('hidden',!on);$('#loaderTitle').textContent=title;$('#enhanceReal').disabled=on||!sourceImg||demoMode;$('#create').disabled=on||!sourceImg||(!enhancedReady&&!demoMode);$$('[data-mode]').forEach(b=>b.disabled=on);}
+function syncGuidePreviewSelection(){$$('[data-guide-preview]').forEach(b=>b.classList.toggle('active',b.dataset.guidePreview===selectedGuideMode));}
+function setGuidePreviewMode(mode,{open=false}={}){if(!stencilModes[mode])return;selectedGuideMode=mode;syncGuidePreviewSelection();if(!open)return;const src=posterizedGuidedByMode[mode];if(!posterizedReady||!src){showNotice('Primero espera a que termine la posterización.');return;}const name=stencilModes[mode]?.name||mode;openImageWindow(src,`Mapa ${name}: estas fronteras son las que el stencil debe respetar. Esta vista es local y no consume IA.`,`Mapa ${name}`);}
+function setLoading(on,title='Generando stencil artístico…'){busy=on;$('#loader').classList.toggle('hidden',!on);$('#loaderTitle').textContent=title;syncAccessControls();}
+function nextFrame(){return new Promise(resolve=>requestAnimationFrame(()=>resolve()));}
+function syncAccessControls(){
+ const unlocked=accessUnlocked||demoMode||adminPreview||!paymentRequired;
+ const enhanceBtn=$('#enhanceReal'), posterBtn=$('#toPosterize'), stencilBtn=$('#toStencil');
+ const enhanceDone=!!enhancedReady&&!demoMode;
+ if(enhanceBtn){
+   enhanceBtn.disabled=busy||!sourceImg||demoMode||!unlocked||enhanceDone||(paymentRequired&&Number(paymentUses.enhance||0)>=1);
+   if(enhanceDone)enhanceBtn.textContent='✓ Imagen mejorada';
+ }
+ // Once enhancement is used, its preparation controls are frozen so a second AI call cannot be triggered accidentally.
+ const enhanceRange=$('#enhance');if(enhanceRange)enhanceRange.disabled=busy||enhanceDone;
+ if(posterBtn){
+   // The user may skip enhancement and go straight to posterization when the uploaded image already has good resolution.
+   posterBtn.disabled=busy||!sourceImg||!unlocked;
+   posterBtn.textContent='Continuar a posterizar';
+ }
+ if(stencilBtn){
+   stencilBtn.disabled=busy||!posterizedReady||!unlocked||posterizationConfirmed;
+   stencilBtn.textContent=posterizationConfirmed?'✓ Posterización confirmada':'Continuar a stencil';
+ }
+ const posterRange=$('#posterize');if(posterRange)posterRange.disabled=busy||!sourceImg||!unlocked||posterizationConfirmed;
+ // In the posterize step the workflow stays locked on posterization to avoid accidental returns to a second enhancement pass.
+ const backEnhanceBtn=$('#backPosterizeEnhance');if(backEnhanceBtn)backEnhanceBtn.disabled=true;
+ $$('[data-guide-preview]').forEach(b=>b.disabled=busy||!posterizedReady||!unlocked);
+ $$('[data-mode]').forEach(b=>{
+   const mode=b.dataset.mode;
+   b.disabled=busy||!posterizedReady||!unlocked;
+   const name=stencilModes[mode]?.name||mode;
+   b.textContent=modeCache[mode]?'✓ '+name:name;
+ });
+ const lock=$('#payLock');if(lock)lock.classList.toggle('hidden',unlocked);
+ const state=$('#accessState');if(state){state.textContent=adminPreview?'✓ MODO DE PRUEBA':(unlocked?'✓ Acceso desbloqueado':'Acceso bloqueado');state.classList.toggle('unlocked',unlocked)}
+ const top=$('#unlockAccess');if(top){top.textContent=adminPreview?'✓ MODO DE PRUEBA · SIN COBRO':(unlocked?'✓ HERRAMIENTAS DESBLOQUEADAS':`PAGAR US$${paymentPrice} Y CREAR MI STENCIL`);top.disabled=unlocked}
+ const inline=$('#unlockInline');if(inline){inline.textContent=`PAGAR US$${paymentPrice}`;inline.disabled=unlocked}
+}
 function showNotice(text,ok=false){const n=$('#engineNotice');n.textContent=text;n.classList.remove('hidden');n.classList.toggle('ok',ok);}
-function loadURL(url,isDemo=false){const im=new Image();im.onload=()=>{sourceImg=im;originalUrl=url;demoMode=isDemo;enhancedReady=isDemo;enhancedJobId=null;generationFile=selectedFile;clearStencilOutputs();$('#drop').classList.add('hidden');drawPhoto(!isDemo);$('#changeImage').disabled=false;$('#showCompare').disabled=false;$('#showPhoto').disabled=false;$('#reset').disabled=false;$('#sampleTag').classList.toggle('hidden',!isDemo);if(isDemo){preparedUrl=originalUrl;currentFullUrl='/assets/sample-stencil.png';setLayerUrls(demoLayerUrls);$('#showStencil').disabled=false;$('#enhanceReal').disabled=true;$('#create').disabled=false;}else{$('#showStencil').disabled=true;$('#enhanceReal').disabled=false;$('#create').disabled=true;}panels(1);setCompareView();};im.src=url;}
+function loadURL(url,isDemo=false){const im=new Image();im.onload=()=>{sourceImg=im;originalUrl=url;demoMode=isDemo;enhancedReady=isDemo;enhancedJobId=null;posterMasterUrl=null;posterMasterJobId=null;posterizedReady=false;posterizedUrl=null;posterizedGuideUrl=null;posterizedJobId=null;posterizedGuidedByMode={};posterizedGuidesByMode={};posterizationConfirmed=false;stencilLockedMode=null;generationFile=selectedFile;clearStencilOutputs();$('#drop').classList.add('hidden');selectedGuideMode='detailed';drawPhoto(!isDemo);$('#changeImage').disabled=false;$('#showCompare').disabled=false;$('#showPhoto').disabled=false;$('#reset').disabled=false;$('#sampleTag').classList.toggle('hidden',!isDemo);if(isDemo){preparedUrl=originalUrl;currentFullUrl='/assets/sample-stencil.png';setLayerUrls(demoLayerUrls);$('#showStencil').disabled=false;}else{$('#showStencil').disabled=true;}panels(1);setCompareView();syncGuidePreviewSelection();syncAccessControls();if(!isDemo&&!paymentIntroShown){paymentIntroShown=true;setTimeout(()=>openFirstImageNotice(),260);}};im.src=url;}
 
-async function checkEngine(){try{const r=await fetch('/api/config');const j=await r.json();engineConfigured=!!j.engine?.configured;if(!engineConfigured)showNotice('Para generar imágenes reales debes configurar OPENAI_API_KEY en el servidor. El modo demo sigue funcionando.');}catch(e){engineConfigured=false;}}
+async function checkEngine(){if(localReviewMode){adminPreview=true;paymentRequired=false;accessUnlocked=true;showNotice('✓ MODO DE PRUEBA FORZADO. Quita ?preview=1 de la URL para usar la IA real.',true);syncAccessControls();}try{const r=await fetch('/api/config',{cache:'no-store'});const j=await r.json();engineConfigured=!!j.engine?.configured;adminPreview=localReviewMode||!!j.preview_mode;paymentRequired=localReviewMode?false:(j.payment?.required!==false);paymentConfigured=!!j.payment?.configured;accessUnlocked=localReviewMode?true:!!j.payment?.unlocked;paymentPrice=j.payment?.price||'1.79';paypalClientId=j.payment?.paypal_client_id||'';paymentUses=j.payment?.uses||{};if(adminPreview)showNotice('MODO DE PRUEBA activo. Quita ?preview=1 para ejecutar la IA real.',true);else if(!engineConfigured)showNotice(isLocalHost?'OPENAI_API_KEY no está cargada en esta Terminal. Cárgala y reinicia Uvicorn para usar la IA real.':'El servicio de IA no está configurado en el servidor.');else if(isLocalHost){const n=$('#engineNotice');if(n)n.classList.add('hidden');}syncAccessControls();}catch(e){engineConfigured=false;paymentConfigured=false;if(localReviewMode){adminPreview=true;paymentRequired=false;accessUnlocked=true;showNotice('MODO DE PRUEBA activo sin conexión al servidor.',true);}else showNotice('No se pudo consultar la configuración del servidor.');syncAccessControls();}}
 
 $('#pick').onclick=()=>{file.value='';file.click()};
 $('#changeImage').onclick=()=>{file.value='';file.click()};
 file.onchange=()=>{const f=file.files[0];if(f){selectedFile=f;loadURL(URL.createObjectURL(f),false)}};
-$('#enhance').oninput=e=>{$('#enhanceValue').textContent=e.target.value;drawPhoto()};
-$$('[data-preset]').forEach(b=>b.onclick=()=>{$$('[data-preset]').forEach(x=>x.classList.remove('active'));b.classList.add('active');prep=b.dataset.preset;const map={soft:[35,'Suave'],balanced:[50,'Equilibrada'],strong:[68,'Fuerte']};const [v,n]=map[prep];$('#enhance').value=v;$('#enhanceValue').textContent=v;$('#prepName').textContent=n;drawPhoto()});
+$('#enhance').oninput=()=>{prep='balanced';drawPhoto()};
 
 async function enhanceCurrentImage(){
- if(demoMode){enhancedReady=true;preparedUrl=originalUrl;$('#create').disabled=false;refreshComparison();return;}
+ if(demoMode){enhancedReady=true;preparedUrl=originalUrl;refreshComparison();syncAccessControls();return;}
  if(!selectedFile)return;
- if(!engineConfigured){showNotice('Configura OPENAI_API_KEY en el servidor para mejorar la imagen.');return;}
+ if(!accessUnlocked&&paymentRequired&&!adminPreview){openPaymentModal();return;}
+ if(adminPreview){
+   try{
+     preparedUrl=localPreviewUrl||originalUrl;enhancedReady=true;enhancedJobId='preview';posterMasterUrl=null;posterMasterJobId=null;posterizedReady=false;posterizedUrl=null;posterizedGuideUrl=null;posterizedJobId=null;posterizedGuidedByMode={};posterizedGuidesByMode={};generationFile=selectedFile;$('#singlePhoto').src=preparedUrl;$('#enhanceReal').textContent='Mejora de prueba lista';clearStencilOutputs();refreshComparison();syncAccessControls();setCompareView();showNotice('✓ Mejora de prueba lista. Ahora pulsa “Continuar a posterizar”. Esta simulación local no consume créditos.',true);
+   }catch(err){console.error(err);showNotice('Error en el modo de prueba: '+(err.message||err));}
+   return;
+ }
+ const canGenerateLocally=!!posterizedJobId;
+ if(!engineConfigured&&!canGenerateLocally){showNotice('El servicio de IA no está disponible temporalmente.');return;}
  setLoading(true,'Mejorando imagen y recuperando detalle…');
+ await nextFrame();
  try{
    const fd=new FormData();fd.append('file',selectedFile);fd.append('preparation',prep);fd.append('enhance',$('#enhance').value);
    const r=await fetch('/api/enhance',{method:'POST',body:fd});
    const raw=await r.text(); let j={};
    try{j=raw?JSON.parse(raw):{}}catch(_){j={}}
    if(!r.ok)throw new Error(j.message||raw||`No se pudo mejorar la imagen (HTTP ${r.status})`);
-   preparedUrl=j.enhanced;enhancedJobId=j.job_id;
+   preparedUrl=j.enhanced;enhancedJobId=j.job_id;paymentUses=j.uses||paymentUses;
    const enhancedResponse=await fetch(preparedUrl);
    if(!enhancedResponse.ok)throw new Error(`La mejora terminó, pero no se pudo cargar el resultado (HTTP ${enhancedResponse.status})`);
    const blob=await enhancedResponse.blob();generationFile=new File([blob],'imagen-mejorada.png',{type:'image/png'});
-   enhancedReady=true;$('#singlePhoto').src=preparedUrl;$('#create').disabled=false;$('#enhanceReal').textContent='Mejorar nuevamente';
+   enhancedReady=true;posterMasterUrl=null;posterMasterJobId=null;posterizedReady=false;posterizedUrl=null;posterizedGuideUrl=null;posterizedJobId=null;posterizedGuidedByMode={};posterizedGuidesByMode={};posterizationConfirmed=false;stencilLockedMode=null;$('#singlePhoto').src=preparedUrl;$('#enhanceReal').textContent='✓ Imagen mejorada';syncAccessControls();
    clearStencilOutputs();refreshComparison();setCompareView();
-   showNotice(`Imagen mejorada lista · ${j.width} × ${j.height} px. Revisa el antes/después y luego crea el stencil.`,true);
+   const successNotice=$('#engineNotice');if(successNotice)successNotice.classList.add('hidden');
  }catch(e){
-   // No bloquear el flujo completo si la restauración falla. El usuario puede
-   // reintentar o crear el stencil con la foto original.
-   enhancedReady=false;enhancedJobId=null;generationFile=selectedFile;preparedUrl=localPreviewUrl||originalUrl;
-   $('#create').disabled=false;refreshComparison();
-   showNotice(`${e.message||'No se pudo mejorar la imagen.'} Puedes reintentar o continuar al stencil con la foto original.`);
+   enhancedReady=false;enhancedJobId=null;posterMasterUrl=null;posterMasterJobId=null;posterizedReady=false;posterizedUrl=null;posterizedGuideUrl=null;posterizedJobId=null;posterizedGuidedByMode={};posterizedGuidesByMode={};generationFile=selectedFile;preparedUrl=localPreviewUrl||originalUrl;
+   syncAccessControls();refreshComparison();
+   const detail=e.message||'No se pudo mejorar la imagen.';
+   showNotice((isLocalHost?`ERROR IA: ${detail}`:'No se pudo completar la mejora con IA. Inténtalo nuevamente.') );
  }
  finally{setLoading(false)}
 }
 $('#enhanceReal').onclick=enhanceCurrentImage;
 
-function buildGenerationForm(mode){const fd=new FormData();fd.append('file',generationFile||selectedFile);fd.append('mode',mode);fd.append('preparation',prep);fd.append('enhance',$('#enhance').value);fd.append('silhouette',$('#cSil').value);fd.append('detail',$('#cDet').value);fd.append('shadows',$('#cSha').value);fd.append('texture',$('#cTex').value);fd.append('simplify','0');if(mode!=='detailed'&&detailedMasterJobId)fd.append('base_job_id',detailedMasterJobId);return fd;}
+async function ensurePosterMaster(){
+ if(posterMasterUrl&&posterMasterJobId)return true;
+ if(!(preparedUrl||originalUrl))return false;
+ if(adminPreview){posterMasterUrl=preparedUrl||originalUrl;posterMasterJobId='preview';return true;}
+ setLoading(true,'Creando posterización artística…');
+ await nextFrame();
+ try{
+   const srcFile=await urlToFile(preparedUrl||originalUrl,'imagen-mejorada.png');
+   const fd=new FormData();fd.append('file',srcFile);
+   const r=await fetch('/api/posterize-master',{method:'POST',body:fd});
+   const raw=await r.text();let j={};try{j=raw?JSON.parse(raw):{}}catch(_){j={}}
+   if(!r.ok)throw new Error(j.message||raw||'No se pudo crear la posterización artística.');
+   posterMasterUrl=`${j.master}?v=${Date.now()}`;
+   posterMasterJobId=j.job_id||null;
+   paymentUses=j.uses||paymentUses;
+   return !!posterMasterUrl;
+ }catch(e){showNotice(e.message||'No se pudo crear la posterización artística.');return false}
+ finally{setLoading(false)}
+}
+
+async function urlToFile(url,name='imagen.png'){
+ const r=await fetch(url,{cache:'no-store'});if(!r.ok)throw new Error('No se pudo leer la imagen preparada.');const blob=await r.blob();return new File([blob],name,{type:blob.type||'image/png'});
+}
+let posterRequestId=0;
+let activePosterOps=0;
+async function applyPosterization(){
+ if(!(preparedUrl||originalUrl))return;
+ if(!posterMasterUrl){const ok=await ensurePosterMaster();if(!ok)return;}
+ const detailLevel=Math.max(0,Math.min(100,Number($('#posterize').value||70)));
+ // UI: left/minus = fewer details, right/plus = more details. Backend uses inverse simplification intensity.
+ const intensity=100-detailLevel;
+ const requestId=++posterRequestId;
+ const sourceUrl=posterMasterUrl||preparedUrl||originalUrl;
+ activePosterOps++;
+ setLoading(true,'Posterizando imagen…');
+ await nextFrame();
+ try{
+   const srcFile=await urlToFile(sourceUrl,'imagen-mejorada.png');
+   const fd=new FormData();fd.append('file',srcFile);fd.append('intensity',String(Math.round(intensity)));
+   const r=await fetch('/api/posterize',{method:'POST',body:fd});
+   const j=await r.json().catch(()=>({}));
+   if(!r.ok)throw new Error(j.message||'No se pudo posterizar la imagen.');
+   if(requestId!==posterRequestId)return;
+   posterizedUrl=`${j.posterized}?v=${Date.now()}`;
+   posterizedGuideUrl=`${j.guided}?v=${Date.now()}`;
+   posterizedJobId=j.job_id||null;
+   posterizedGuidedByMode=Object.fromEntries(Object.entries(j.guided_by_mode||{}).map(([k,u])=>[k,`${u}?v=${Date.now()}`]));
+   posterizedGuidesByMode=Object.fromEntries(Object.entries(j.guides_by_mode||{}).map(([k,u])=>[k,`${u}?v=${Date.now()}`]));
+   posterizedReady=true;
+   refreshComparison();syncAccessControls();
+   if(currentPanel===2)setCompareView();
+ }catch(e){
+   if(requestId!==posterRequestId)return;
+   posterizedReady=false;posterizedUrl=null;posterizedGuideUrl=null;syncAccessControls();
+   showNotice(e.message||'No se pudo posterizar la imagen.');
+ }finally{
+   activePosterOps=Math.max(0,activePosterOps-1);
+   if(activePosterOps===0)setLoading(false);
+ }
+}
+let posterTimer=null;
+$('#posterize').oninput=()=>{clearTimeout(posterTimer);posterTimer=setTimeout(()=>applyPosterization().catch(console.error),420)};
+$('#toPosterize').onclick=async()=>{
+ if(!sourceImg){showNotice('Primero carga una imagen.');return;}
+ if(!enhancedReady)showNotice('Se usará la imagen actual directamente para posterizar. Si la foto ya tiene buena resolución, no hace falta mejorarla.',true);
+ panels(2);
+ const ok=await ensurePosterMaster();if(!ok)return;
+ await applyPosterization();
+ setCompareView();
+};
+$('#backPosterizeEnhance').onclick=()=>{panels(1);setCompareView()};
+$('#toStencil').onclick=async()=>{
+ if(!posterizedReady)await applyPosterization();
+ if(!posterizedReady||!posterizedJobId){showNotice('Espera a que termine la posterización.');return;}
+ posterizationConfirmed=true;
+ generationFile=await urlToFile(posterizedUrl,'posterizacion.png');
+ syncAccessControls();
+ panels(3);
+ setCompareView();
+ await selectAndGenerateMode('detailed');
+};
+
+function buildGenerationForm(mode){const fd=new FormData();fd.append('file',generationFile||selectedFile);fd.append('mode',mode);if(posterizedJobId)fd.append('poster_job_id',posterizedJobId);fd.append('preparation',prep);fd.append('enhance',$('#enhance').value);fd.append('silhouette',$('#cSil').value);fd.append('detail',$('#cDet').value);fd.append('shadows',$('#cSha').value);fd.append('texture',$('#cTex').value);fd.append('simplify','0');if(mode!=='detailed'&&detailedMasterJobId)fd.append('base_job_id',detailedMasterJobId);return fd;}
 
 function activateModePreset(mode){
- const m=stencilModes[mode]; if(!m)return; activeStencilMode=mode;
- $('#modeName').textContent=m.name; $('#modeHelp').textContent=m.help;
+ const m=stencilModes[mode]; if(!m)return; activeStencilMode=mode;selectedGuideMode=mode;syncGuidePreviewSelection();
+ const modeNameEl=$('#modeName'); if(modeNameEl)modeNameEl.textContent=m.name;
  $('#cSil').value=m.sil; $('#cDet').value=m.det; $('#cSha').value=m.sha; $('#cTex').value=m.tex;
  $$('[data-mode]').forEach(b=>b.classList.toggle('active',b.dataset.mode===mode));
  applyControls();
 }
 
 function showGeneratedResult(j){
- setLayerUrls(j.layers);currentFullUrl=j.full;realGenerated=true;lastGeneratedMode=j.mode||activeStencilMode;
+ setLayerUrls(j.layers);currentFullUrl=j.full;realGenerated=true;lastGeneratedMode=j.mode||activeStencilMode;stencilLockedMode=null;
  if(lastGeneratedMode==='detailed')detailedMasterJobId=j.job_id;
  $('#sampleTag').classList.add('hidden');$('#showStencil').disabled=false;
- const modeName=stencilModes[lastGeneratedMode]?.name||lastGeneratedMode;
- $('#generationStatus').textContent=`${modeName} listo. ${lastGeneratedMode==='detailed'?'Este resultado queda guardado como stencil maestro.':'Esta versión se limpió desde el mismo Detallado maestro para conservar la composición.'}`;
- panels(2);setCompareView();applyControls();
+ $('#generationStatus').textContent='';
+ panels(3);setCompareView();applyControls();
 }
 
 async function requestMode(mode,{showResult=true}={}){
  const r=await fetch('/api/generate',{method:'POST',body:buildGenerationForm(mode)});
  const j=await r.json();if(!r.ok)throw new Error(j.message||'Error al generar');
- modeCache[mode]=j;
+ modeCache[mode]=j;paymentUses=j.uses||paymentUses;
  if(mode==='detailed')detailedMasterJobId=j.job_id;
  if(showResult)showGeneratedResult(j);
  return j;
@@ -290,35 +412,21 @@ async function selectAndGenerateMode(mode){
  activateModePreset(mode);
  if(demoMode){lastGeneratedMode=mode;$('#generationStatus').textContent=`Vista demo: ${m.name}.`;applyControls();return;}
  if(!selectedFile)return;
- if(!engineConfigured){showNotice('Configura OPENAI_API_KEY en el servidor para generar un stencil real.');return;}
+ if(!accessUnlocked&&paymentRequired&&!adminPreview){openPaymentModal();return;}
+ if(adminPreview){lastGeneratedMode=mode;currentFullUrl='/assets/sample-stencil.png';setLayerUrls(demoLayerUrls);realGenerated=true;$('#showStencil').disabled=false;$('#generationStatus').textContent=`Vista de prueba: ${m.name}. Se muestra un stencil de demostración para revisar la interfaz sin consumir créditos.`;panels(3);setCompareView();applyControls();return;}
+ const canGenerateLocally=!!posterizedJobId;
+ if(!engineConfigured&&!canGenerateLocally){showNotice('El servicio de IA no está disponible temporalmente.');return;}
  // Si ya existe este modo para la imagen actual, mostrarlo de inmediato sin repetir coste.
  if(modeCache[mode]){showGeneratedResult(modeCache[mode]);return;}
  setLoading(true,`Generando ${m.name}…`);
+ await nextFrame();
  try{
-   // Los modos limpios siempre derivan del mismo Detallado maestro. Si por alguna razón
-   // aún no existe, se crea en segundo plano y después continúa automáticamente.
-   if(mode!=='detailed'&&!detailedMasterJobId){
-     $('#loaderTitle').textContent='Preparando stencil Detallado maestro…';
-     activateModePreset('detailed');
-     await requestMode('detailed',{showResult:false});
-     activateModePreset(mode);
-     $('#loaderTitle').textContent=`Generando ${m.name}…`;
-   }
+   // Solo se genera el modo elegido. No se crea un segundo stencil oculto, evitando un gasto adicional de IA.
    await requestMode(mode,{showResult:true});
  }catch(e){showNotice(e.message||'No se pudo generar el stencil.');}
  finally{setLoading(false)}
 }
 
-$('#create').onclick=async()=>{
- activateModePreset('detailed');
- if(demoMode){lastGeneratedMode='detailed';panels(2);setCompareView();$('#showStencil').disabled=false;applyControls();return;}
- if(!enhancedReady){
-   // Fallback seguro: si la mejora falló, continuar usando el archivo original.
-   generationFile=selectedFile;
-   showNotice('La mejora no está disponible; crearé el stencil usando la foto original. Puedes volver luego e intentar mejorarla de nuevo.');
- }
- await selectAndGenerateMode('detailed');
-};
 $('#showCompare').onclick=setCompareView;$('#showPhoto').onclick=setPhotoView;$('#showStencil').onclick=setStencilView;
 
 function applyControls(){const con=0,sim=0;let sil=+$('#cSil').value,det=+$('#cDet').value,sha=+$('#cSha').value,tex=+$('#cTex').value;$('#vSil').textContent=sil;$('#vDet').textContent=det;$('#vSha').textContent=sha;$('#vTex').textContent=tex;
@@ -333,8 +441,8 @@ function applyControls(){const con=0,sim=0;let sil=+$('#cSil').value,det=+$('#cD
  // Simplificado keeps deliberate structural contours; Muy limpio removes the broader structure layer.
  layers.structure.style.opacity=veryClean?0:(simplified?Math.max(.78,.62+con/350):Math.max(.55,(1-sim*.0035)*(.66+det/300)));
  // Secondary information drops aggressively in the two clean presets.
- layers.detail.style.opacity=veryClean?0:(simplified?Math.min(.16,det/400):Math.max(0,keep*(det/100)));
- layers.shade.style.opacity=veryClean?0:(simplified?Math.min(.14,sha/400):Math.max(0,Math.max(0,1-sim/82)*(sha/100)));
+ layers.detail.style.opacity=(simplified||veryClean)?0:Math.max(0,keep*(det/100));
+ layers.shade.style.opacity=(simplified||veryClean)?0:Math.max(0,Math.max(0,1-sim/82)*(sha/100));
  layers.texture.style.opacity=(simplified||veryClean)?0:Math.max(0,Math.max(0,1-sim/68)*(tex/100));
  const repeats=Math.max(0,Math.min(3,Math.round(con/34)));
  const shadow=Array(repeats).fill('drop-shadow(0 0 0 rgba(0,0,0,.78))').join(' ');
@@ -346,12 +454,12 @@ function applyStencilMode(mode){activateModePreset(mode)}
 $$('[data-mode]').forEach(b=>b.onclick=()=>selectAndGenerateMode(b.dataset.mode));
 $('#rightPreview').classList.add('click-preview');
 $('#rightPreview').title='Haz clic para abrir la imagen mejorada';
-$('#rightPreview').onclick=openEnhancedPreview;
+$('#rightPreview').onclick=()=>{if(currentPanel===1)openEnhancedPreview();else if(currentPanel===2)openPosterizedPreview();};
 $('#stencilStack').classList.add('click-preview');
 $('#stencilStack').title='Haz clic para abrir el stencil';
 $('#stencilStack').onclick=openStencilPreview;
-$('#reset').onclick=()=>{$('#enhance').value=50;$('#enhanceValue').textContent=50;prep='balanced';$('#prepName').textContent='Equilibrada';$$('[data-preset]').forEach(x=>x.classList.toggle('active',x.dataset.preset==='balanced'));drawPhoto();activateModePreset('detailed')};
-$('#backEnhance').onclick=()=>{panels(1);setCompareView()};$('#toExport').onclick=()=>{panels(3);setCompareView();initExportSize()};$('#backStencil').onclick=()=>{panels(2);setCompareView()};
+$('#reset').onclick=()=>{$('#enhance').value=50;$('#posterize').value=70;posterMasterUrl=null;posterMasterJobId=null;posterizedReady=false;posterizedUrl=null;posterizedGuideUrl=null;posterizedJobId=null;posterizedGuidedByMode={};posterizedGuidesByMode={};posterizationConfirmed=false;stencilLockedMode=null;selectedGuideMode='detailed';prep='balanced';drawPhoto();syncGuidePreviewSelection();activateModePreset('detailed')};
+$('#backPosterize').onclick=()=>{panels(2);setCompareView()};$('#toExport').onclick=()=>{panels(4);setCompareView();initExportSize()};$('#backStencil').onclick=()=>{panels(3);setCompareView()};
 
 function zoomPreviewHTML(src,message,title='Vista previa'){
  const safeTitle=String(title).replace(/[<>&\"]/g,'');
@@ -359,7 +467,7 @@ function zoomPreviewHTML(src,message,title='Vista previa'){
  return `<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5"><title>${safeTitle}</title><style>
  *{box-sizing:border-box}html,body{height:100%}body{margin:0;background:#000;color:#f5f5f5;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;overflow:hidden}
  .top{position:fixed;inset:0 0 auto 0;z-index:20;background:rgba(0,0,0,.94);border-bottom:1px solid rgba(255,255,255,.22);backdrop-filter:blur(10px);padding:10px 14px}
- .notice{max-width:1080px;margin:0 auto;text-align:center;font-size:13px;font-weight:700;color:#e8e8e8}
+ .toprow{max-width:1080px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:10px}.notice{flex:1;text-align:center;font-size:13px;font-weight:700;color:#e8e8e8}.save{min-height:36px;border:1px solid #00a8ff;border-radius:9px;background:#03080d;color:#fff;padding:7px 12px;font-weight:800;cursor:pointer;white-space:nowrap}
  #viewport{position:absolute;inset:47px 0 0 0;overflow:auto;background:#111;cursor:default;display:flex;align-items:flex-start;justify-content:flex-start;padding:28px}
  #viewport.zoomed{cursor:grab}
  #viewport.dragging{cursor:grabbing;user-select:none}
@@ -367,7 +475,7 @@ function zoomPreviewHTML(src,message,title='Vista previa'){
  #zoomImage{display:block;background:#fff;box-shadow:0 12px 45px rgba(0,0,0,.45);max-width:none;max-height:none;cursor:zoom-in;image-rendering:auto}
  #viewport.zoomed #zoomImage{cursor:zoom-out}
  @media(max-width:650px){.top{padding:8px}.notice{font-size:11px}#viewport{inset:43px 0 0 0;padding:14px}}
- </style></head><body><div class="top"><div class="notice">${safeMessage}</div></div><div id="viewport"><div id="stage"><img id="zoomImage" src="${src}" alt="${safeTitle}" title=""></div></div><script>
+ </style></head><body><div class="top"><div class="toprow"><div class="notice">${safeMessage}</div><button class="save" id="saveImage" type="button">Descargar</button></div></div><div id="viewport"><div id="stage"><img id="zoomImage" src="${src}" alt="${safeTitle}" title=""></div></div><script>
  const img=document.getElementById('zoomImage'),vp=document.getElementById('viewport');
  let scale=1,fitScale=1,maxScale=8,zoomed=false,drag=false,moved=false,sx=0,sy=0,sl=0,st=0;
  function clamp(v,a,b){return Math.max(a,Math.min(b,v))}
@@ -404,6 +512,8 @@ function zoomPreviewHTML(src,message,title='Vista previa'){
  }
  vp.addEventListener('pointerup',stop);
  vp.addEventListener('pointercancel',e=>{if(!drag)return;drag=false;moved=false;vp.classList.remove('dragging');try{vp.releasePointerCapture(e.pointerId)}catch(_){}});
+ async function saveImage(){try{const r=await fetch(img.src);const blob=await r.blob();const file=new File([blob],'tattoo-stencil.png',{type:'image/png'});if(navigator.share&&(!navigator.canShare||navigator.canShare({files:[file]}))){try{await navigator.share({files:[file],title:'TATTOO STENCIL'});return}catch(e){if(e&&e.name==='AbortError')return}}const u=URL.createObjectURL(blob),a=document.createElement('a');a.href=u;a.download='tattoo-stencil.png';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),30000)}catch(e){alert('No se pudo preparar la descarga.')}}
+ document.getElementById('saveImage').addEventListener('click',saveImage);
  window.addEventListener('resize',()=>{if(!zoomed)fit()});
  <\/script></body></html>`;
 }
@@ -434,8 +544,13 @@ function openEnhancedPreview(){
  openImageWindow(preparedUrl,'Puedes descargar tu imagen mejorada ahora, pero recuerda realizar tu stencil.','Imagen mejorada');
 }
 
+function openPosterizedPreview(){
+ if(currentPanel!==2||!posterizedReady||!posterizedUrl)return;
+ openImageWindow(posterizedUrl,'Posterización limpia: revisa los bloques de tono y color con la lupa. Las guías del stencil se calculan aparte.','Imagen posterizada');
+}
+
 async function openStencilPreview(){
- if(currentPanel!==2||!(demoMode||realGenerated))return;
+ if(![3,4].includes(currentPanel)||!(demoMode||realGenerated))return;
  const w=window.open('','_blank');
  if(!w){alert('El navegador bloqueó la nueva ventana. Permite ventanas emergentes para este sitio e inténtalo otra vez.');return;}
  w.opener=null;
@@ -452,7 +567,7 @@ async function openStencilPreview(){
 
 async function loadImg(src){return new Promise((res,rej)=>{const i=new Image();i.onload=()=>res(i);i.onerror=rej;i.src=src})}
 let exportRatio=1, lastSizeEdit='width';
-async function initExportSize(){try{const probe=await loadImg(layers.structure.src||currentFullUrl);exportRatio=probe.naturalWidth/probe.naturalHeight||1;const w=+$('#outWidthCm').value||15;$('#outHeightCm').value=(w/exportRatio).toFixed(1);updateSizePreview()}catch(e){updateSizePreview()}}
+async function initExportSize(){try{const probe=await loadImg(currentFullUrl||layers.structure.src||layers.silhouette.src);exportRatio=probe.naturalWidth/probe.naturalHeight||1;const w=+$('#outWidthCm').value||15;$('#outHeightCm').value=(w/exportRatio).toFixed(1);updateSizePreview()}catch(e){updateSizePreview()}}
 function updateSizePreview(){const dpi=+$('#dpi').value||300;const wcm=Math.max(1,+$('#outWidthCm').value||15), hcm=Math.max(1,+$('#outHeightCm').value||20);const pxW=Math.round(wcm/2.54*dpi),pxH=Math.round(hcm/2.54*dpi);$('#sizePreview').textContent=`Salida: ${wcm.toFixed(1)} × ${hcm.toFixed(1)} cm · ${pxW} × ${pxH} px · ${dpi} DPI`;}
 $('#outWidthCm').oninput=()=>{lastSizeEdit='width';if($('#lockRatio').checked&&exportRatio){$('#outHeightCm').value=((+$('#outWidthCm').value||15)/exportRatio).toFixed(1)}updateSizePreview()};
 $('#outHeightCm').oninput=()=>{lastSizeEdit='height';if($('#lockRatio').checked&&exportRatio){$('#outWidthCm').value=((+$('#outHeightCm').value||20)*exportRatio).toFixed(1)}updateSizePreview()};
@@ -464,7 +579,7 @@ async function savePngForDevice(canvas,filename){
   const blob=await canvasToPngBlob(canvas);
   const fileObj=new File([blob],filename,{type:'image/png'});
   if(isAppleTouchDevice()&&navigator.share){
-    const shareData={files:[fileObj],title:'TATTOO STENCIL FREE'};
+    const shareData={files:[fileObj],title:'TATTOO STENCIL'};
     const canShareFiles=!navigator.canShare||navigator.canShare(shareData);
     if(canShareFiles){
       try{await navigator.share(shareData);return 'shared'}catch(err){if(err&&err.name==='AbortError')return 'cancelled';console.warn('iOS share failed, using download fallback',err)}
@@ -486,6 +601,8 @@ $('#download').onclick=async()=>{
   const btn=$('#download');
   const oldText=btn.textContent;
   btn.disabled=true;btn.textContent='Preparando PNG…';
+  setLoading(true,'Preparando tamaño y descarga…');
+  await nextFrame();
   try{
     const dpi=+$('#dpi').value||300;
     const wcm=Math.max(1,+$('#outWidthCm').value||15),hcm=Math.max(1,+$('#outHeightCm').value||20);
@@ -506,45 +623,57 @@ $('#download').onclick=async()=>{
     const filename=`tattoo-stencil-${wcm.toFixed(1)}x${hcm.toFixed(1)}cm.png`;
     const result=await savePngForDevice(c,filename);
     if(result==='cancelled')return;
-    const fs=$('#finalSupport');
-    if(fs){fs.classList.remove('hidden');setTimeout(()=>fs.scrollIntoView({behavior:'smooth',block:'nearest'}),180)}
   }catch(err){console.error(err);alert('No se pudo guardar el PNG. Inténtalo nuevamente.');}
-  finally{btn.disabled=false;btn.textContent=oldText;}
+  finally{setLoading(false);btn.disabled=false;btn.textContent=oldText;}
 };
-const DONATION_MONTHLY_GOAL=500;
-const DONATION_MONTHLY_RAISED=75;
-function renderMonthlyDonationGoal(){
-  const fill=document.getElementById('monthlyGoalFill');
-  const label=document.getElementById('monthlyGoalPercent');
-  if(!fill||!label)return;
-  const pct=Math.max(0,Math.min(100,(DONATION_MONTHLY_RAISED/DONATION_MONTHLY_GOAL)*100));
-  fill.style.width=pct+'%';
-  const shown=Math.round(pct*10)/10;
-  label.textContent=(Number.isInteger(shown)?shown:shown.toFixed(1))+'%';
+const firstImageNotice=$('#firstImageNotice');
+function closeFirstImageNotice(){firstImageNotice?.classList.add('hidden');document.body.style.overflow='';}
+function openFirstImageNotice(){
+ if(!firstImageNotice)return;
+ const pay=$('#firstImagePay');
+ if(pay){pay.textContent=`PAGAR US$${paymentPrice}`;pay.classList.toggle('hidden',accessUnlocked||!paymentRequired);}
+ firstImageNotice.classList.remove('hidden');document.body.style.overflow='hidden';
 }
-renderMonthlyDonationGoal();
-const donationModal=$('#donationModal');
-const binancePanel=$('#binancePanel');
-const donationAction=()=>{
-  if(!donationModal)return;
-  binancePanel?.classList.remove('active');
-  donationModal.classList.remove('hidden');
-  document.body.style.overflow='hidden';
-};
-const closeDonation=()=>{
-  if(!donationModal)return;
-  donationModal.classList.add('hidden');
-  binancePanel?.classList.remove('active');
-  document.body.style.overflow='';
-};
-$('#donate').onclick=donationAction;
-$('#donateFinal').onclick=donationAction;
-$('#donationClose').onclick=closeDonation;
-$('#donatePaypal').onclick=()=>window.open('https://paypal.me/rodrigoloyolatattoo','_blank','noopener,noreferrer');
-$('#donateMercadoPago').onclick=()=>window.open('https://link.mercadopago.cl/tattoostencilfree','_blank','noopener,noreferrer');
-$('#donateBinance').onclick=()=>binancePanel?.classList.toggle('active');
-donationModal.addEventListener('click',(e)=>{if(e.target===donationModal)closeDonation();});
-document.addEventListener('keydown',(e)=>{if(e.key==='Escape'&&!donationModal.classList.contains('hidden'))closeDonation();});
-activateModePreset('detailed');checkEngine();
+$('#firstImageNoticeClose').onclick=closeFirstImageNotice;
+$('#firstImageContinue').onclick=closeFirstImageNotice;
+$('#firstImagePay').onclick=()=>{closeFirstImageNotice();openPaymentModal();};
+firstImageNotice.addEventListener('click',e=>{if(e.target===firstImageNotice)closeFirstImageNotice()});
+
+const paymentModal=$('#paymentModal');
+const paymentStatus=$('#paymentStatus');
+function setPaymentStatus(text,kind=''){if(!paymentStatus)return;paymentStatus.textContent=text;paymentStatus.className='payment-status'+(kind?' '+kind:'')}
+function closePaymentModal(){paymentModal?.classList.add('hidden');document.body.style.overflow='';}
+async function loadPayPal(){
+ if(paypalRendered)return;
+ if(!paymentConfigured||!paypalClientId){setPaymentStatus('PayPal todavía no está conectado. Para mostrar el botón de pago real debes configurar PAYPAL_CLIENT_ID y PAYPAL_CLIENT_SECRET en Railway (o en tu Terminal si pruebas localmente).','error');return;}
+ if(window.paypal){renderPayPal();return;}
+ setPaymentStatus('Cargando PayPal…');
+ const script=document.createElement('script');script.src=`https://www.paypal.com/sdk/js?client-id=${encodeURIComponent(paypalClientId)}&currency=USD&components=buttons`;script.async=true;
+ script.onload=renderPayPal;script.onerror=()=>setPaymentStatus('No se pudo cargar PayPal. Revisa tu conexión e inténtalo de nuevo.','error');document.head.appendChild(script);
+}
+function renderPayPal(){
+ if(paypalRendered||!window.paypal)return;paypalRendered=true;setPaymentStatus('');
+ window.paypal.Buttons({
+   style:{layout:'vertical',shape:'rect',label:'paypal'},
+   createOrder:async()=>{
+     setPaymentStatus('Preparando pago seguro…');
+     const r=await fetch('/api/paypal/create-order',{method:'POST'});const j=await r.json();if(!r.ok||!j.id){throw new Error(j.message||'No se pudo iniciar el pago.')}return j.id;
+   },
+   onApprove:async(data)=>{
+     setPaymentStatus('Confirmando pago…');
+     const r=await fetch(`/api/paypal/capture-order/${encodeURIComponent(data.orderID)}`,{method:'POST'});const j=await r.json();
+     if(!r.ok||!j.unlocked){setPaymentStatus(j.message||'No se pudo confirmar el pago.','error');return;}
+     accessUnlocked=true;paymentUses=j.uses||{};syncAccessControls();setPaymentStatus('✓ Pago confirmado. Herramientas desbloqueadas.','ok');showNotice('Pago confirmado. Ya puedes usar las herramientas.',true);setTimeout(closePaymentModal,900);
+   },
+   onCancel:()=>setPaymentStatus('Pago cancelado. No se realizó ningún cobro.'),
+   onError:(err)=>{console.error(err);setPaymentStatus('PayPal no pudo completar el pago. Inténtalo nuevamente.','error')}
+ }).render('#paypalButtons');
+}
+function openPaymentModal(){
+ if(accessUnlocked||!paymentRequired)return;paymentModal?.classList.remove('hidden');document.body.style.overflow='hidden';
+ $('#paymentTitle').textContent=`CREA TU STENCIL POR SOLO US$${paymentPrice}`;document.querySelector('.payment-price').textContent=`US$${paymentPrice}`;const ph=document.querySelector('.paypal-heading');if(ph)ph.textContent=`PAGAR US$${paymentPrice} CON PAYPAL`;loadPayPal();
+}
+$('#unlockAccess').onclick=openPaymentModal;$('#unlockInline').onclick=openPaymentModal;$('#paymentClose').onclick=closePaymentModal;paymentModal.addEventListener('click',e=>{if(e.target===paymentModal)closePaymentModal()});document.addEventListener('keydown',e=>{if(e.key!=='Escape')return;if(firstImageNotice&&!firstImageNotice.classList.contains('hidden'))closeFirstImageNotice();else if(!paymentModal.classList.contains('hidden'))closePaymentModal()});
+activateModePreset('detailed');syncGuidePreviewSelection();checkEngine();
 </script>
 </body></html>
